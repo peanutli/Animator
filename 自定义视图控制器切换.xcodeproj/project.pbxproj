@@ -41,6 +41,8 @@
 		6E8D50D11D12CAF20012CD3B /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50BD1D12CAF20012CD3B /* TransformationMatrix.cpp */; };
 		6E8D50D41D12CF9D0012CD3B /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50D31D12CF9D0012CD3B /* CustomCell.m */; };
 		6E8D50D71D1387530012CD3B /* ListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50D61D1387530012CD3B /* ListItemCell.m */; };
+		6E8D50DC1D13BBCE0012CD3B /* SpringScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50DB1D13BBCE0012CD3B /* SpringScaleViewController.m */; };
+		6E8D50E01D13BE3E0012CD3B /* UIFont+Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +127,10 @@
 		6E8D50D31D12CF9D0012CD3B /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		6E8D50D51D1387530012CD3B /* ListItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemCell.h; sourceTree = "<group>"; };
 		6E8D50D61D1387530012CD3B /* ListItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemCell.m; sourceTree = "<group>"; };
+		6E8D50DA1D13BBCE0012CD3B /* SpringScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringScaleViewController.h; sourceTree = "<group>"; };
+		6E8D50DB1D13BBCE0012CD3B /* SpringScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringScaleViewController.m; sourceTree = "<group>"; };
+		6E8D50DE1D13BE3E0012CD3B /* UIFont+Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fonts.h"; sourceTree = "<group>"; };
+		6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fonts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,12 +163,13 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
+				6E8D50DD1D13BCD40012CD3B /* BaseVC */,
+				6E8D50D91D13BB9A0012CD3B /* ViewControllers */,
+				6E8D50D81D13BB780012CD3B /* UICategory */,
 				6E8D508B1D12CAF20012CD3B /* pop */,
 				6E8D507E1D127FEB0012CD3B /* GCD */,
 				6E8D503D1D1133B20012CD3B /* AppDelegate.h */,
 				6E8D503E1D1133B20012CD3B /* AppDelegate.m */,
-				6E8D50881D12B1BF0012CD3B /* BaseViewController.h */,
-				6E8D50891D12B1BF0012CD3B /* BaseViewController.m */,
 				6E8D50511D1133D40012CD3B /* FirstViewController.h */,
 				6E8D50521D1133D40012CD3B /* FirstViewController.m */,
 				6E8D50D21D12CF9D0012CD3B /* CustomCell.h */,
@@ -175,8 +182,6 @@
 				6E8D505B1D113DC60012CD3B /* PushAnimated.m */,
 				6E8D505D1D113DDE0012CD3B /* PopAnimated.h */,
 				6E8D505E1D113DDE0012CD3B /* PopAnimated.m */,
-				6E8D50601D113E860012CD3B /* UIView+SetRect.h */,
-				6E8D50611D113E860012CD3B /* UIView+SetRect.m */,
 				6E8D50541D1133E70012CD3B /* SecondViewController.h */,
 				6E8D50551D1133E70012CD3B /* SecondViewController.m */,
 				6E8D50401D1133B20012CD3B /* ViewController.h */,
@@ -273,6 +278,35 @@
 			path = WebCore;
 			sourceTree = "<group>";
 		};
+		6E8D50D81D13BB780012CD3B /* UICategory */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D50601D113E860012CD3B /* UIView+SetRect.h */,
+				6E8D50611D113E860012CD3B /* UIView+SetRect.m */,
+				6E8D50DE1D13BE3E0012CD3B /* UIFont+Fonts.h */,
+				6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */,
+			);
+			name = UICategory;
+			sourceTree = "<group>";
+		};
+		6E8D50D91D13BB9A0012CD3B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D50DA1D13BBCE0012CD3B /* SpringScaleViewController.h */,
+				6E8D50DB1D13BBCE0012CD3B /* SpringScaleViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6E8D50DD1D13BCD40012CD3B /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D50881D12B1BF0012CD3B /* BaseViewController.h */,
+				6E8D50891D12B1BF0012CD3B /* BaseViewController.m */,
+			);
+			name = BaseVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,9 +393,11 @@
 				6E8D50C51D12CAF20012CD3B /* POPAnimationTracer.mm in Sources */,
 				6E8D50D41D12CF9D0012CD3B /* CustomCell.m in Sources */,
 				6E8D50D01D12CAF20012CD3B /* POPVector.mm in Sources */,
+				6E8D50DC1D13BBCE0012CD3B /* SpringScaleViewController.m in Sources */,
 				6E8D50C31D12CAF20012CD3B /* POPAnimationExtras.mm in Sources */,
 				6E8D50CE1D12CAF20012CD3B /* POPPropertyAnimation.mm in Sources */,
 				6E8D50421D1133B20012CD3B /* ViewController.m in Sources */,
+				6E8D50E01D13BE3E0012CD3B /* UIFont+Fonts.m in Sources */,
 				6E8D50811D12803E0012CD3B /* GCDQueue.m in Sources */,
 				6E8D503F1D1133B20012CD3B /* AppDelegate.m in Sources */,
 				6E8D503C1D1133B20012CD3B /* main.m in Sources */,

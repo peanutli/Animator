@@ -16,7 +16,16 @@
     self.frame = newFrame;
 }
 
+- (CGFloat)width{
+    return CGRectGetWidth(self.bounds);
+}
+
 - (CGFloat)x{
     return self.frame.origin.x;
 }
+
+- (CGPoint)middlePoint{
+    return CGPointMake(CGRectGetWidth(self.bounds)/2.f, CGRectGetHeight(self.bounds)/2.f);
+}
+
 @end

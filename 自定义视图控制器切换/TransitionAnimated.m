@@ -19,7 +19,7 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
-        self.transitionDuration = 5.5f;
+        self.transitionDuration = 1.5f;
     }
     return self;
 }

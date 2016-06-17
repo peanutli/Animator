@@ -13,6 +13,7 @@
 #import "GCDQueue.h"
 #import "UIView+SetRect.h"
 #import "ListItemCell.h"
+#import "SpringScaleViewController.h"
 static NSString *CellIdentifier = @"CellIdentifier";
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
@@ -77,11 +78,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
                                                            toViewController:(UIViewController *)toVC{
     if (operation == UINavigationControllerOperationPush) {
         return [PushAnimated new];
-      //  return [PushAnimator new];
     }
     else if (operation == UINavigationControllerOperationPop){
         return [PopAnimated new];
-       // return [PopAnimator new];
     }
     else {
         return nil;
@@ -103,6 +102,11 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50.f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SpringScaleViewController * springVC = [[SpringScaleViewController alloc]init];
+    [self.navigationController pushViewController:springVC animated:YES];
 }
 /*
 #pragma mark - Navigation
