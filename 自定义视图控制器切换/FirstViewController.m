@@ -10,12 +10,19 @@
 #import "SecondViewController.h"
 #import "PushAnimated.h"
 #import "PopAnimated.h"
-
-@interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate>
-
+#import "GCDQueue.h"
+#import "UIView+SetRect.h"
+#import "ListItemCell.h"
+static NSString *CellIdentifier = @"CellIdentifier";
+@interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) UITableView * tableView;
+@property (nonatomic,strong) NSArray * dataArray;
 @end
 
 @implementation FirstViewController
+#pragma mark--
+
+#pragma mark--lifeCycle
 
 - (instancetype)init{
     self = [super init];
@@ -32,8 +39,22 @@
     [button setTitle:@"进入下一个控制器" forState:UIControlStateNormal];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(transitionVC) forControlEvents:UIControlEventTouchUpInside];
+   
+    self.tableView = [[UITableView alloc]initWithFrame:ScreenFrame style:UITableViewStylePlain];
+    [self.view addSubview:self.tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[ListItemCell class] forCellReuseIdentifier:CellIdentifier];
     
     
+    [GCDQueue executedInMainQueue:^{
+        self.dataArray = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13", nil];
+        NSMutableArray * indexPaths = [[NSMutableArray alloc]init];
+        [self.dataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [indexPaths addObject:[NSIndexPath indexPathForItem:idx inSection:0]];
+        }];
+        [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+    } afterDelaySecs:1.5f];
     // Do any additional setup after loading the view.
 }
 
@@ -65,6 +86,23 @@
     else {
         return nil;
     }
+}
+
+#pragma mark --UITableViewDelegate And UITablViewDatasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ListItemCell * cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.textLabel.text = [NSString stringWithFormat:@"hello world %@",[self.dataArray objectAtIndex:indexPath.row]];
+    //cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50.f;
 }
 /*
 #pragma mark - Navigation

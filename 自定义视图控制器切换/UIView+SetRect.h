@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #define Width  [UIScreen mainScreen].bounds.size.width
+#define ScreenFrame  [UIScreen mainScreen].bounds
 @interface UIView (SetRect)
 @property (nonatomic,assign)CGFloat x;
 @end
