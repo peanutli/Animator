@@ -14,6 +14,7 @@
 #import "UIView+SetRect.h"
 #import "ListItemCell.h"
 #import "SpringScaleViewController.h"
+#import "ScrollViewAnimationController.h"
 static NSString *CellIdentifier = @"CellIdentifier";
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
@@ -105,8 +106,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    SpringScaleViewController * springVC = [[SpringScaleViewController alloc]init];
-    [self.navigationController pushViewController:springVC animated:YES];
+//    SpringScaleViewController * springVC = [[SpringScaleViewController alloc]init];
+//    [self.navigationController pushViewController:springVC animated:YES];
+    ScrollViewAnimationController * scrollVC = [[ScrollViewAnimationController alloc]init];
+    [self.navigationController pushViewController:scrollVC animated:YES];
 }
 /*
 #pragma mark - Navigation

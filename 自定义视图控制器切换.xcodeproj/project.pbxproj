@@ -43,6 +43,12 @@
 		6E8D50D71D1387530012CD3B /* ListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50D61D1387530012CD3B /* ListItemCell.m */; };
 		6E8D50DC1D13BBCE0012CD3B /* SpringScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50DB1D13BBCE0012CD3B /* SpringScaleViewController.m */; };
 		6E8D50E01D13BE3E0012CD3B /* UIFont+Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */; };
+		6E8D50E31D1500AE0012CD3B /* ScrollViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50E21D1500AE0012CD3B /* ScrollViewAnimationController.m */; };
+		6E8D50E81D1509A70012CD3B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8D50E51D1509A70012CD3B /* 1.png */; };
+		6E8D50EA1D1509A70012CD3B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8D50E71D1509A70012CD3B /* 2.png */; };
+		6E8D50F01D156F800012CD3B /* ScrollViewComputingAlphaValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50EF1D156F800012CD3B /* ScrollViewComputingAlphaValue.m */; };
+		6E8D50F41D1571300012CD3B /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50F31D1571300012CD3B /* Math.m */; };
+		6E8D50F61D1583820012CD3B /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E8D50F51D1583820012CD3B /* 0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +137,15 @@
 		6E8D50DB1D13BBCE0012CD3B /* SpringScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringScaleViewController.m; sourceTree = "<group>"; };
 		6E8D50DE1D13BE3E0012CD3B /* UIFont+Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fonts.h"; sourceTree = "<group>"; };
 		6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fonts.m"; sourceTree = "<group>"; };
+		6E8D50E11D1500AE0012CD3B /* ScrollViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewAnimationController.h; sourceTree = "<group>"; };
+		6E8D50E21D1500AE0012CD3B /* ScrollViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewAnimationController.m; sourceTree = "<group>"; };
+		6E8D50E51D1509A70012CD3B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		6E8D50E71D1509A70012CD3B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		6E8D50EE1D156F800012CD3B /* ScrollViewComputingAlphaValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewComputingAlphaValue.h; sourceTree = "<group>"; };
+		6E8D50EF1D156F800012CD3B /* ScrollViewComputingAlphaValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewComputingAlphaValue.m; sourceTree = "<group>"; };
+		6E8D50F21D1571300012CD3B /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		6E8D50F31D1571300012CD3B /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		6E8D50F51D1583820012CD3B /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +178,9 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
+				6E8D50F11D1571120012CD3B /* Math */,
+				6E8D50ED1D156F420012CD3B /* ScrollViewComputing */,
+				6E8D50E41D1509A70012CD3B /* Picture */,
 				6E8D50DD1D13BCD40012CD3B /* BaseVC */,
 				6E8D50D91D13BB9A0012CD3B /* ViewControllers */,
 				6E8D50D81D13BB780012CD3B /* UICategory */,
@@ -294,6 +312,8 @@
 			children = (
 				6E8D50DA1D13BBCE0012CD3B /* SpringScaleViewController.h */,
 				6E8D50DB1D13BBCE0012CD3B /* SpringScaleViewController.m */,
+				6E8D50E11D1500AE0012CD3B /* ScrollViewAnimationController.h */,
+				6E8D50E21D1500AE0012CD3B /* ScrollViewAnimationController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -305,6 +325,34 @@
 				6E8D50891D12B1BF0012CD3B /* BaseViewController.m */,
 			);
 			name = BaseVC;
+			sourceTree = "<group>";
+		};
+		6E8D50E41D1509A70012CD3B /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D50F51D1583820012CD3B /* 0.png */,
+				6E8D50E51D1509A70012CD3B /* 1.png */,
+				6E8D50E71D1509A70012CD3B /* 2.png */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		6E8D50ED1D156F420012CD3B /* ScrollViewComputing */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D50EE1D156F800012CD3B /* ScrollViewComputingAlphaValue.h */,
+				6E8D50EF1D156F800012CD3B /* ScrollViewComputingAlphaValue.m */,
+			);
+			name = ScrollViewComputing;
+			sourceTree = "<group>";
+		};
+		6E8D50F11D1571120012CD3B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D50F21D1571300012CD3B /* Math.h */,
+				6E8D50F31D1571300012CD3B /* Math.m */,
+			);
+			name = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +414,10 @@
 			files = (
 				6E8D504A1D1133B20012CD3B /* LaunchScreen.storyboard in Resources */,
 				6E8D50471D1133B20012CD3B /* Assets.xcassets in Resources */,
+				6E8D50EA1D1509A70012CD3B /* 2.png in Resources */,
 				6E8D50451D1133B20012CD3B /* Main.storyboard in Resources */,
+				6E8D50F61D1583820012CD3B /* 0.png in Resources */,
+				6E8D50E81D1509A70012CD3B /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,9 +434,12 @@
 				6E8D505C1D113DC60012CD3B /* PushAnimated.m in Sources */,
 				6E8D50C11D12CAF20012CD3B /* POPAnimation.mm in Sources */,
 				6E8D50CC1D12CAF20012CD3B /* POPLayerExtras.mm in Sources */,
+				6E8D50E31D1500AE0012CD3B /* ScrollViewAnimationController.m in Sources */,
+				6E8D50F41D1571300012CD3B /* Math.m in Sources */,
 				6E8D50C61D12CAF20012CD3B /* POPAnimator.mm in Sources */,
 				6E8D50C91D12CAF20012CD3B /* POPCustomAnimation.mm in Sources */,
 				6E8D50C01D12CAF20012CD3B /* POPAnimatableProperty.mm in Sources */,
+				6E8D50F01D156F800012CD3B /* ScrollViewComputingAlphaValue.m in Sources */,
 				6E8D50C71D12CAF20012CD3B /* POPBasicAnimation.mm in Sources */,
 				6E8D508A1D12B1BF0012CD3B /* BaseViewController.m in Sources */,
 				6E8D50CA1D12CAF20012CD3B /* POPDecayAnimation.mm in Sources */,

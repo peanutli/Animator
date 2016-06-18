@@ -60,6 +60,8 @@ static NSString * kSpringAnimation = @"springAnimation";
         springAnimation.name = kSpringAnimation;
         springAnimation.delegate = self;
         springAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1.f, 1.f)];
+        springAnimation.springBounciness = 20.f;
+        springAnimation.dynamicsTension = 100.f;
         [self.scaleView pop_addAnimation:springAnimation forKey:nil];
     }
     else if ([anim.name isEqualToString:kSpringAnimation]){
