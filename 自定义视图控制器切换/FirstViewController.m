@@ -15,6 +15,7 @@
 #import "ListItemCell.h"
 #import "SpringScaleViewController.h"
 #import "ScrollViewAnimationController.h"
+#import "InfiniteLoopViewController.h"
 static NSString *CellIdentifier = @"CellIdentifier";
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
@@ -108,8 +109,11 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 //    SpringScaleViewController * springVC = [[SpringScaleViewController alloc]init];
 //    [self.navigationController pushViewController:springVC animated:YES];
-    ScrollViewAnimationController * scrollVC = [[ScrollViewAnimationController alloc]init];
-    [self.navigationController pushViewController:scrollVC animated:YES];
+//    ScrollViewAnimationController * scrollVC = [[ScrollViewAnimationController alloc]init];
+//    [self.navigationController pushViewController:scrollVC animated:YES];
+    
+    InfiniteLoopViewController * loopVC = [[InfiniteLoopViewController alloc]init];
+    [self.navigationController pushViewController:loopVC animated:YES];
 }
 /*
 #pragma mark - Navigation

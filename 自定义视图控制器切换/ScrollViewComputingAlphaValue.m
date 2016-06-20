@@ -8,6 +8,9 @@
 
 #import "ScrollViewComputingAlphaValue.h"
 #import "Math.h"
+#import "LoopViewCell.h"
+
+
 
 @interface ScrollViewComputingAlphaValue ()
 
@@ -18,10 +21,11 @@
 
 @implementation ScrollViewComputingAlphaValue
 
+
+
 - (void)makeLineEquation{
     self.frontLine = [Math mathOnceLineEquationWihtPointA:MATPointMake(_startValue, 0) PointB:MATPointMake(_midValue, 1)];
     self.backLine = [Math mathOnceLineEquationWihtPointA:MATPointMake(_midValue, 1) PointB:MATPointMake(_endValue, 0)];
-    
 }
 
 - (void)setInputValue:(CGFloat)inputValue{
