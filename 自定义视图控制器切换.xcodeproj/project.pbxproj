@@ -74,6 +74,8 @@
 		6EADB9961D18DDAC0043419D /* ScrollParallax ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9951D18DDAC0043419D /* ScrollParallax ViewController.m */; };
 		6EADB9981D18E01E0043419D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EADB9971D18E01E0043419D /* 3.png */; };
 		6EADB99C1D18E1920043419D /* MoreInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB99B1D18E1920043419D /* MoreInfoView.m */; };
+		6EADB9A01D1934070043419D /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB99F1D1934070043419D /* CalculatorMaker.m */; };
+		6EADB9A31D193DE90043419D /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9A21D193DE90043419D /* NSObject+Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -222,6 +224,10 @@
 		6EADB9971D18E01E0043419D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		6EADB99A1D18E1920043419D /* MoreInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoView.h; sourceTree = "<group>"; };
 		6EADB99B1D18E1920043419D /* MoreInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoView.m; sourceTree = "<group>"; };
+		6EADB99E1D1934070043419D /* CalculatorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorMaker.h; sourceTree = "<group>"; };
+		6EADB99F1D1934070043419D /* CalculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
+		6EADB9A11D193DE90043419D /* NSObject+Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculator.h"; sourceTree = "<group>"; };
+		6EADB9A21D193DE90043419D /* NSObject+Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,7 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
+				6EADB99D1D1933C80043419D /* Maker */,
 				6EADB9991D18E16F0043419D /* View */,
 				6E8D51101D16D47E0012CD3B /* ThirdParty */,
 				6E8D510C1D168BE50012CD3B /* Models */,
@@ -530,6 +537,17 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		6EADB99D1D1933C80043419D /* Maker */ = {
+			isa = PBXGroup;
+			children = (
+				6EADB99E1D1934070043419D /* CalculatorMaker.h */,
+				6EADB99F1D1934070043419D /* CalculatorMaker.m */,
+				6EADB9A11D193DE90043419D /* NSObject+Calculator.h */,
+				6EADB9A21D193DE90043419D /* NSObject+Calculator.m */,
+			);
+			name = Maker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -611,7 +629,9 @@
 				6E8D50C11D12CAF20012CD3B /* POPAnimation.mm in Sources */,
 				6E8D50CC1D12CAF20012CD3B /* POPLayerExtras.mm in Sources */,
 				6E8D51001D1646F60012CD3B /* InfiniteLoopViewBuilder.m in Sources */,
+				6EADB9A01D1934070043419D /* CalculatorMaker.m in Sources */,
 				6E8D50E31D1500AE0012CD3B /* ScrollViewAnimationController.m in Sources */,
+				6EADB9A31D193DE90043419D /* NSObject+Calculator.m in Sources */,
 				6E8D510B1D1689780012CD3B /* LoopViewCell.m in Sources */,
 				6E8D513C1D16D4D20012CD3B /* UIButton+WebCache.m in Sources */,
 				6E8D510F1D168C030012CD3B /* ImageModel.m in Sources */,
