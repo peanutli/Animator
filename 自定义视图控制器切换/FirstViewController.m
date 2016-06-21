@@ -16,6 +16,7 @@
 #import "SpringScaleViewController.h"
 #import "ScrollViewAnimationController.h"
 #import "InfiniteLoopViewController.h"
+#import "ScrollParallax ViewController.h"
 static NSString *CellIdentifier = @"CellIdentifier";
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
@@ -112,8 +113,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
 //    ScrollViewAnimationController * scrollVC = [[ScrollViewAnimationController alloc]init];
 //    [self.navigationController pushViewController:scrollVC animated:YES];
     
-    InfiniteLoopViewController * loopVC = [[InfiniteLoopViewController alloc]init];
-    [self.navigationController pushViewController:loopVC animated:YES];
+//    InfiniteLoopViewController * loopVC = [[InfiniteLoopViewController alloc]init];
+//    [self.navigationController pushViewController:loopVC animated:YES];
+    ScrollParallaxViewController * parallaxVC = [[ScrollParallaxViewController alloc]init];
+    [self.navigationController pushViewController:parallaxVC animated:YES];
 }
 /*
 #pragma mark - Navigation

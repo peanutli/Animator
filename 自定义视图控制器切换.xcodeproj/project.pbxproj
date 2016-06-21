@@ -71,6 +71,9 @@
 		6E8D51401D16D4D20012CD3B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D512E1D16D4D20012CD3B /* UIImageView+HighlightedWebCache.m */; };
 		6E8D51411D16D4D20012CD3B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D51301D16D4D20012CD3B /* UIImageView+WebCache.m */; };
 		6E8D51421D16D4D20012CD3B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D51321D16D4D20012CD3B /* UIView+WebCacheOperation.m */; };
+		6EADB9961D18DDAC0043419D /* ScrollParallax ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9951D18DDAC0043419D /* ScrollParallax ViewController.m */; };
+		6EADB9981D18E01E0043419D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EADB9971D18E01E0043419D /* 3.png */; };
+		6EADB99C1D18E1920043419D /* MoreInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB99B1D18E1920043419D /* MoreInfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,6 +217,11 @@
 		6E8D51301D16D4D20012CD3B /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		6E8D51311D16D4D20012CD3B /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		6E8D51321D16D4D20012CD3B /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		6EADB9941D18DDAC0043419D /* ScrollParallax ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollParallax ViewController.h"; sourceTree = "<group>"; };
+		6EADB9951D18DDAC0043419D /* ScrollParallax ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScrollParallax ViewController.m"; sourceTree = "<group>"; };
+		6EADB9971D18E01E0043419D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		6EADB99A1D18E1920043419D /* MoreInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoView.h; sourceTree = "<group>"; };
+		6EADB99B1D18E1920043419D /* MoreInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +254,7 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
+				6EADB9991D18E16F0043419D /* View */,
 				6E8D51101D16D47E0012CD3B /* ThirdParty */,
 				6E8D510C1D168BE50012CD3B /* Models */,
 				6E8D51041D1664B50012CD3B /* Cell */,
@@ -387,6 +396,8 @@
 				6E8D50E21D1500AE0012CD3B /* ScrollViewAnimationController.m */,
 				6E8D50F71D15B8810012CD3B /* InfiniteLoopViewController.h */,
 				6E8D50F81D15B8810012CD3B /* InfiniteLoopViewController.m */,
+				6EADB9941D18DDAC0043419D /* ScrollParallax ViewController.h */,
+				6EADB9951D18DDAC0043419D /* ScrollParallax ViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -406,6 +417,7 @@
 				6E8D50F51D1583820012CD3B /* 0.png */,
 				6E8D50E51D1509A70012CD3B /* 1.png */,
 				6E8D50E71D1509A70012CD3B /* 2.png */,
+				6EADB9971D18E01E0043419D /* 3.png */,
 			);
 			path = Picture;
 			sourceTree = "<group>";
@@ -509,6 +521,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		6EADB9991D18E16F0043419D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EADB99A1D18E1920043419D /* MoreInfoView.h */,
+				6EADB99B1D18E1920043419D /* MoreInfoView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E8D504A1D1133B20012CD3B /* LaunchScreen.storyboard in Resources */,
+				6EADB9981D18E01E0043419D /* 3.png in Resources */,
 				6E8D50471D1133B20012CD3B /* Assets.xcassets in Resources */,
 				6E8D50EA1D1509A70012CD3B /* 2.png in Resources */,
 				6E8D50451D1133B20012CD3B /* Main.storyboard in Resources */,
@@ -613,6 +635,7 @@
 				6E8D505F1D113DDE0012CD3B /* PopAnimated.m in Sources */,
 				6E8D51411D16D4D20012CD3B /* UIImageView+WebCache.m in Sources */,
 				6E8D50C51D12CAF20012CD3B /* POPAnimationTracer.mm in Sources */,
+				6EADB99C1D18E1920043419D /* MoreInfoView.m in Sources */,
 				6E8D50D41D12CF9D0012CD3B /* CustomCell.m in Sources */,
 				6E8D50D01D12CAF20012CD3B /* POPVector.mm in Sources */,
 				6E8D50DC1D13BBCE0012CD3B /* SpringScaleViewController.m in Sources */,
@@ -630,6 +653,7 @@
 				6E8D50D71D1387530012CD3B /* ListItemCell.m in Sources */,
 				6E8D50CF1D12CAF20012CD3B /* POPSpringAnimation.mm in Sources */,
 				6E8D51391D16D4D20012CD3B /* SDWebImageDownloaderOperation.m in Sources */,
+				6EADB9961D18DDAC0043419D /* ScrollParallax ViewController.m in Sources */,
 				6E8D51031D164A680012CD3B /* InfiniteLoopView.m in Sources */,
 				6E8D51381D16D4D20012CD3B /* SDWebImageDownloader.m in Sources */,
 				6E8D50CB1D12CAF20012CD3B /* POPGeometry.mm in Sources */,
