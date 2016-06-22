@@ -11,6 +11,7 @@
 #import "InfiniteLoopViewBuilder.h"
 #import "UIView+SetRect.h"
 #import "LoopViewCell.h"
+#import "NSObject+Manger.h"
 
 @interface InfiniteLoopViewController ()
 
@@ -20,6 +21,14 @@
 
 - (void)setStep{
     [super setStep];
+    
+   NSInteger result =[NSObject Calculator:^(CalculatorManger * manger) {
+       manger.add(6).add(12).add(2);
+   }];
+    
+    NSLog(@"%ld",result);
+    
+    
     NSArray *strings = @[@"http://img.wdjimg.com/image/video/d999011124c9ed55c2dd74e0ccee36ea_0_0.jpeg",
                          @"http://img.wdjimg.com/image/video/2ddcad6dcc38c5ca88614b7c5543199a_0_0.jpeg",
                          @"http://img.wdjimg.com/image/video/6d6ccfd79ee1deac2585150f40915c09_0_0.jpeg",

@@ -113,10 +113,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
 //    ScrollViewAnimationController * scrollVC = [[ScrollViewAnimationController alloc]init];
 //    [self.navigationController pushViewController:scrollVC animated:YES];
     
-//    InfiniteLoopViewController * loopVC = [[InfiniteLoopViewController alloc]init];
-//    [self.navigationController pushViewController:loopVC animated:YES];
-    ScrollParallaxViewController * parallaxVC = [[ScrollParallaxViewController alloc]init];
-    [self.navigationController pushViewController:parallaxVC animated:YES];
+    InfiniteLoopViewController * loopVC = [[InfiniteLoopViewController alloc]init];
+    [self.navigationController pushViewController:loopVC animated:YES];
+//    ScrollParallaxViewController * parallaxVC = [[ScrollParallaxViewController alloc]init];
+//    [self.navigationController pushViewController:parallaxVC animated:YES];
 }
 /*
 #pragma mark - Navigation

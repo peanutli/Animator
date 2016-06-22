@@ -76,6 +76,8 @@
 		6EADB99C1D18E1920043419D /* MoreInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB99B1D18E1920043419D /* MoreInfoView.m */; };
 		6EADB9A01D1934070043419D /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB99F1D1934070043419D /* CalculatorMaker.m */; };
 		6EADB9A31D193DE90043419D /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9A21D193DE90043419D /* NSObject+Calculator.m */; };
+		6EADB9A61D1A443F0043419D /* CalculatorManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9A51D1A443F0043419D /* CalculatorManger.m */; };
+		6EADB9AC1D1A48AA0043419D /* NSObject+Manger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9AB1D1A48AA0043419D /* NSObject+Manger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,6 +230,10 @@
 		6EADB99F1D1934070043419D /* CalculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
 		6EADB9A11D193DE90043419D /* NSObject+Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculator.h"; sourceTree = "<group>"; };
 		6EADB9A21D193DE90043419D /* NSObject+Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculator.m"; sourceTree = "<group>"; };
+		6EADB9A41D1A443F0043419D /* CalculatorManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManger.h; sourceTree = "<group>"; };
+		6EADB9A51D1A443F0043419D /* CalculatorManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManger.m; sourceTree = "<group>"; };
+		6EADB9AA1D1A48AA0043419D /* NSObject+Manger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Manger.h"; sourceTree = "<group>"; };
+		6EADB9AB1D1A48AA0043419D /* NSObject+Manger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Manger.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -542,6 +548,10 @@
 			children = (
 				6EADB99E1D1934070043419D /* CalculatorMaker.h */,
 				6EADB99F1D1934070043419D /* CalculatorMaker.m */,
+				6EADB9A41D1A443F0043419D /* CalculatorManger.h */,
+				6EADB9A51D1A443F0043419D /* CalculatorManger.m */,
+				6EADB9AA1D1A48AA0043419D /* NSObject+Manger.h */,
+				6EADB9AB1D1A48AA0043419D /* NSObject+Manger.m */,
 				6EADB9A11D193DE90043419D /* NSObject+Calculator.h */,
 				6EADB9A21D193DE90043419D /* NSObject+Calculator.m */,
 			);
@@ -638,6 +648,7 @@
 				6E8D51341D16D4D20012CD3B /* NSData+ImageContentType.m in Sources */,
 				6E8D51371D16D4D20012CD3B /* SDWebImageDecoder.m in Sources */,
 				6E8D50F91D15B8810012CD3B /* InfiniteLoopViewController.m in Sources */,
+				6EADB9A61D1A443F0043419D /* CalculatorManger.m in Sources */,
 				6E8D50F41D1571300012CD3B /* Math.m in Sources */,
 				6E8D50C61D12CAF20012CD3B /* POPAnimator.mm in Sources */,
 				6E8D50C91D12CAF20012CD3B /* POPCustomAnimation.mm in Sources */,
@@ -662,6 +673,7 @@
 				6E8D513F1D16D4D20012CD3B /* UIImage+WebP.m in Sources */,
 				6E8D50C31D12CAF20012CD3B /* POPAnimationExtras.mm in Sources */,
 				6E8D50CE1D12CAF20012CD3B /* POPPropertyAnimation.mm in Sources */,
+				6EADB9AC1D1A48AA0043419D /* NSObject+Manger.m in Sources */,
 				6E8D513E1D16D4D20012CD3B /* UIImage+MultiFormat.m in Sources */,
 				6E8D513D1D16D4D20012CD3B /* UIImage+GIF.m in Sources */,
 				6E8D50421D1133B20012CD3B /* ViewController.m in Sources */,

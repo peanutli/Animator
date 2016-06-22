@@ -30,9 +30,6 @@ static NSInteger kPictureTag = 2000;
     
     //链式编程思想 加法计算器使用block的 make.add(4).add(6)
     
-//    CalculatorMaker * maker = [[CalculatorMaker alloc]init];
-//    NSInteger result =  maker.add(6).add(10).multiplication(5).result;
-//    NSLog(@"%ld",result);
     NSInteger result =  [NSObject makeCalculator:^(CalculatorMaker *maker) {
         maker.add(6).add(10).multiplication(5);
     }];
