@@ -78,6 +78,10 @@
 		6EADB9A31D193DE90043419D /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9A21D193DE90043419D /* NSObject+Calculator.m */; };
 		6EADB9A61D1A443F0043419D /* CalculatorManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9A51D1A443F0043419D /* CalculatorManger.m */; };
 		6EADB9AC1D1A48AA0043419D /* NSObject+Manger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9AB1D1A48AA0043419D /* NSObject+Manger.m */; };
+		6EADB9AF1D1A69090043419D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9AE1D1A69090043419D /* Person.m */; };
+		6EADB9B31D1A6B6A0043419D /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B21D1A6B6A0043419D /* NSObject+KVO.m */; };
+		6EADB9B61D1A6D790043419D /* LDCKVONotifiyingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B51D1A6D790043419D /* LDCKVONotifiyingPerson.m */; };
+		6EADB9BA1D1A801F0043419D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B91D1A801F0043419D /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -234,6 +238,14 @@
 		6EADB9A51D1A443F0043419D /* CalculatorManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManger.m; sourceTree = "<group>"; };
 		6EADB9AA1D1A48AA0043419D /* NSObject+Manger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Manger.h"; sourceTree = "<group>"; };
 		6EADB9AB1D1A48AA0043419D /* NSObject+Manger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Manger.m"; sourceTree = "<group>"; };
+		6EADB9AD1D1A69090043419D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6EADB9AE1D1A69090043419D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6EADB9B11D1A6B6A0043419D /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		6EADB9B21D1A6B6A0043419D /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		6EADB9B41D1A6D790043419D /* LDCKVONotifiyingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCKVONotifiyingPerson.h; sourceTree = "<group>"; };
+		6EADB9B51D1A6D790043419D /* LDCKVONotifiyingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCKVONotifiyingPerson.m; sourceTree = "<group>"; };
+		6EADB9B81D1A801F0043419D /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		6EADB9B91D1A801F0043419D /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,7 +278,6 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
-				6EADB99D1D1933C80043419D /* Maker */,
 				6EADB9991D18E16F0043419D /* View */,
 				6E8D51101D16D47E0012CD3B /* ThirdParty */,
 				6E8D510C1D168BE50012CD3B /* Models */,
@@ -480,6 +491,9 @@
 		6E8D510C1D168BE50012CD3B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6EADB9BB1D1A8EC70043419D /* 链式编程 */,
+				6EADB9B71D1A7FED0043419D /* 函数式编程 */,
+				6EADB9B01D1A6B390043419D /* 响应式编程 */,
 				6E8D510D1D168C030012CD3B /* ImageModel.h */,
 				6E8D510E1D168C030012CD3B /* ImageModel.m */,
 			);
@@ -556,6 +570,36 @@
 				6EADB9A21D193DE90043419D /* NSObject+Calculator.m */,
 			);
 			name = Maker;
+			sourceTree = "<group>";
+		};
+		6EADB9B01D1A6B390043419D /* 响应式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				6EADB9AD1D1A69090043419D /* Person.h */,
+				6EADB9AE1D1A69090043419D /* Person.m */,
+				6EADB9B11D1A6B6A0043419D /* NSObject+KVO.h */,
+				6EADB9B21D1A6B6A0043419D /* NSObject+KVO.m */,
+				6EADB9B41D1A6D790043419D /* LDCKVONotifiyingPerson.h */,
+				6EADB9B51D1A6D790043419D /* LDCKVONotifiyingPerson.m */,
+			);
+			name = "响应式编程";
+			sourceTree = "<group>";
+		};
+		6EADB9B71D1A7FED0043419D /* 函数式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				6EADB9B81D1A801F0043419D /* Calculator.h */,
+				6EADB9B91D1A801F0043419D /* Calculator.m */,
+			);
+			name = "函数式编程";
+			sourceTree = "<group>";
+		};
+		6EADB9BB1D1A8EC70043419D /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				6EADB99D1D1933C80043419D /* Maker */,
+			);
+			name = "链式编程";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -641,6 +685,7 @@
 				6E8D51001D1646F60012CD3B /* InfiniteLoopViewBuilder.m in Sources */,
 				6EADB9A01D1934070043419D /* CalculatorMaker.m in Sources */,
 				6E8D50E31D1500AE0012CD3B /* ScrollViewAnimationController.m in Sources */,
+				6EADB9BA1D1A801F0043419D /* Calculator.m in Sources */,
 				6EADB9A31D193DE90043419D /* NSObject+Calculator.m in Sources */,
 				6E8D510B1D1689780012CD3B /* LoopViewCell.m in Sources */,
 				6E8D513C1D16D4D20012CD3B /* UIButton+WebCache.m in Sources */,
@@ -648,12 +693,14 @@
 				6E8D51341D16D4D20012CD3B /* NSData+ImageContentType.m in Sources */,
 				6E8D51371D16D4D20012CD3B /* SDWebImageDecoder.m in Sources */,
 				6E8D50F91D15B8810012CD3B /* InfiniteLoopViewController.m in Sources */,
+				6EADB9B61D1A6D790043419D /* LDCKVONotifiyingPerson.m in Sources */,
 				6EADB9A61D1A443F0043419D /* CalculatorManger.m in Sources */,
 				6E8D50F41D1571300012CD3B /* Math.m in Sources */,
 				6E8D50C61D12CAF20012CD3B /* POPAnimator.mm in Sources */,
 				6E8D50C91D12CAF20012CD3B /* POPCustomAnimation.mm in Sources */,
 				6E8D50C01D12CAF20012CD3B /* POPAnimatableProperty.mm in Sources */,
 				6E8D513A1D16D4D20012CD3B /* SDWebImageManager.m in Sources */,
+				6EADB9AF1D1A69090043419D /* Person.m in Sources */,
 				6E8D50F01D156F800012CD3B /* ScrollViewComputingAlphaValue.m in Sources */,
 				6E8D51331D16D4D20012CD3B /* MKAnnotationView+WebCache.m in Sources */,
 				6E8D50C71D12CAF20012CD3B /* POPBasicAnimation.mm in Sources */,
@@ -687,6 +734,7 @@
 				6E8D51391D16D4D20012CD3B /* SDWebImageDownloaderOperation.m in Sources */,
 				6EADB9961D18DDAC0043419D /* ScrollParallax ViewController.m in Sources */,
 				6E8D51031D164A680012CD3B /* InfiniteLoopView.m in Sources */,
+				6EADB9B31D1A6B6A0043419D /* NSObject+KVO.m in Sources */,
 				6E8D51381D16D4D20012CD3B /* SDWebImageDownloader.m in Sources */,
 				6E8D50CB1D12CAF20012CD3B /* POPGeometry.mm in Sources */,
 				6E8D50C81D12CAF20012CD3B /* POPCGUtils.mm in Sources */,

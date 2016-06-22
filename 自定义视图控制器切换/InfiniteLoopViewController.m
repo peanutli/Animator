@@ -12,8 +12,13 @@
 #import "UIView+SetRect.h"
 #import "LoopViewCell.h"
 #import "NSObject+Manger.h"
+#import "Person.h"
+//#import "NSObject+KVO.h"
+#import "Calculator.h"
 
 @interface InfiniteLoopViewController ()
+
+@property (nonatomic,strong) Person * p;
 
 @end
 
@@ -21,13 +26,47 @@
 
 - (void)setStep{
     [super setStep];
-    
-   NSInteger result =[NSObject Calculator:^(CalculatorManger * manger) {
+  // 链式编程思想
+   NSInteger result0 =[NSObject Calculator:^(CalculatorManger * manger) {
        manger.add(6).add(12).add(2);
    }];
     
-    NSLog(@"%ld",result);
+    NSLog(@"%ld",result0);
     
+    //响应式编程思想
+    
+//     _p = [[Person alloc]init];
+//    _p.name = @"hello";
+//    [_p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+//    _p.name = @"world";
+//    
+//    [_p removeObserver:self forKeyPath:@"name"];
+    
+//    _p = [[Person alloc]init];
+//    _p.name = @"hello";
+//    [_p ldc_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+//    _p.name = @"world";
+    
+    //函数式编程 一个操作，执行一系列的方法。
+    
+    
+    Calculator * calcutator = [[Calculator alloc]init];
+    int result = [calcutator add:^int(int result) {
+        result += 10;
+        result +=100;
+        NSLog(@"%d",result);
+        return result;
+    }].result;
+    NSLog(@"%d",result);
+    
+    BOOL isEqual = [[calcutator add:^int(int result) {
+        result += 10;
+        result += 100;
+        return result;
+    }]equal:^BOOL(int result) {
+        return result == 220;
+    }].isEqual;
+    NSLog(@"=====%d",isEqual);
     
     NSArray *strings = @[@"http://img.wdjimg.com/image/video/d999011124c9ed55c2dd74e0ccee36ea_0_0.jpeg",
                          @"http://img.wdjimg.com/image/video/2ddcad6dcc38c5ca88614b7c5543199a_0_0.jpeg",
@@ -58,6 +97,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    NSLog(@"%@",_p.name);
+}
 /*
 #pragma mark - Navigation
 
