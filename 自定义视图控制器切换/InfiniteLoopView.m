@@ -28,7 +28,7 @@
         
         //init flowLayout
         self.flowLayout = [[UICollectionViewFlowLayout alloc]init];
-        self.flowLayout.minimumLineSpacing = 0.f;
+        self.flowLayout.minimumLineSpacing = 14.f;
         self.flowLayout.itemSize = self.bounds.size;
         
         //init collectionView
@@ -80,6 +80,8 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"====section%ld",indexPath.section);
+    NSLog(@"=======%ld",indexPath.row);
     CustomInfiniteLoopViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.customClass) forIndexPath:indexPath];
     cell.indexPath = indexPath;
     cell.dataModel = self.models[indexPath.row];

@@ -82,6 +82,7 @@
 		6EADB9B31D1A6B6A0043419D /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B21D1A6B6A0043419D /* NSObject+KVO.m */; };
 		6EADB9B61D1A6D790043419D /* LDCKVONotifiyingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B51D1A6D790043419D /* LDCKVONotifiyingPerson.m */; };
 		6EADB9BA1D1A801F0043419D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B91D1A801F0043419D /* Calculator.m */; };
+		6EB41A291D1D13C100C32DA7 /* LDCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -246,6 +247,9 @@
 		6EADB9B51D1A6D790043419D /* LDCKVONotifiyingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCKVONotifiyingPerson.m; sourceTree = "<group>"; };
 		6EADB9B81D1A801F0043419D /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		6EADB9B91D1A801F0043419D /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		6EB41A271D1D13C100C32DA7 /* LDCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDCBaseNavigationController.h; path = ../LDCBaseNavigationController.h; sourceTree = "<group>"; };
+		6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDCBaseNavigationController.m; path = ../LDCBaseNavigationController.m; sourceTree = "<group>"; };
+		6EB41A2A1D1D19AA00C32DA7 /* LDCPch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LDCPch.h; path = ../LDCPch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +282,7 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
+				6EB41A251D1D134B00C32DA7 /* Base */,
 				6EADB9991D18E16F0043419D /* View */,
 				6E8D51101D16D47E0012CD3B /* ThirdParty */,
 				6E8D510C1D168BE50012CD3B /* Models */,
@@ -308,6 +313,7 @@
 				6E8D50551D1133E70012CD3B /* SecondViewController.m */,
 				6E8D50401D1133B20012CD3B /* ViewController.h */,
 				6E8D50411D1133B20012CD3B /* ViewController.m */,
+				6EB41A2A1D1D19AA00C32DA7 /* LDCPch.h */,
 				6E8D50431D1133B20012CD3B /* Main.storyboard */,
 				6E8D50461D1133B20012CD3B /* Assets.xcassets */,
 				6E8D50481D1133B20012CD3B /* LaunchScreen.storyboard */,
@@ -602,6 +608,23 @@
 			name = "链式编程";
 			sourceTree = "<group>";
 		};
+		6EB41A251D1D134B00C32DA7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6EB41A261D1D135300C32DA7 /* BaseNav */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6EB41A261D1D135300C32DA7 /* BaseNav */ = {
+			isa = PBXGroup;
+			children = (
+				6EB41A271D1D13C100C32DA7 /* LDCBaseNavigationController.h */,
+				6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */,
+			);
+			name = BaseNav;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -628,6 +651,7 @@
 		6E8D502F1D1133B20012CD3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LDC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "花生";
 				TargetAttributes = {
@@ -700,6 +724,7 @@
 				6E8D50C91D12CAF20012CD3B /* POPCustomAnimation.mm in Sources */,
 				6E8D50C01D12CAF20012CD3B /* POPAnimatableProperty.mm in Sources */,
 				6E8D513A1D16D4D20012CD3B /* SDWebImageManager.m in Sources */,
+				6EB41A291D1D13C100C32DA7 /* LDCBaseNavigationController.m in Sources */,
 				6EADB9AF1D1A69090043419D /* Person.m in Sources */,
 				6E8D50F01D156F800012CD3B /* ScrollViewComputingAlphaValue.m in Sources */,
 				6E8D51331D16D4D20012CD3B /* MKAnnotationView+WebCache.m in Sources */,
@@ -796,6 +821,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = /Users/peanut/Desktop/zidingyi/LDCPch.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -839,6 +865,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = /Users/peanut/Desktop/zidingyi/LDCPch.h;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

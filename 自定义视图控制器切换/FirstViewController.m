@@ -35,9 +35,42 @@ static NSString *CellIdentifier = @"CellIdentifier";
     }
     return self;
 }
+
+- (void)layoutSubViews{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LDCLog(@"hello world");
     self.navigationController.delegate = self;
+    UIButton * leftbutton = [[UIButton alloc]init];
+    [leftbutton setBackgroundImage:[UIImage imageNamed:@"user_sel"] forState:UIControlStateNormal];
+    [leftbutton setBackgroundImage:[UIImage imageNamed:@"user"] forState:UIControlStateHighlighted];
+    [leftbutton addTarget:self action:@selector(addUser) forControlEvents:UIControlEventTouchUpInside];
+    CGSize size = [leftbutton currentBackgroundImage].size;
+    leftbutton.frame = CGRectMake(0, 0, size.width, size.height);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftbutton];
+    
+//    UIButton * rightButton1 = [[UIButton alloc]init];
+//    [rightButton1 setBackgroundImage:[UIImage imageNamed:@"home_sel"] forState:UIControlStateNormal];
+//    [rightButton1 setBackgroundImage:[UIImage imageNamed:@"home"] forState:UIControlStateHighlighted];
+//   // [rightButton1 addTarget:self action:@selector(addUser) forControlEvents:UIControlEventTouchUpInside];
+//    CGSize size1 = [rightButton1 currentBackgroundImage].size;
+//    rightButton1.frame = CGRectMake(0, 0, size1.width, size1.height);
+//    
+//    UIButton * rightButton2 = [[UIButton alloc]init];
+//    [rightButton2 setBackgroundImage:[UIImage imageNamed:@"search_sel"] forState:UIControlStateNormal];
+//    [rightButton2 setBackgroundImage:[UIImage imageNamed:@"search"] forState:UIControlStateHighlighted];
+//   // [rightButton2 addTarget:self action:@selector(addUser) forControlEvents:UIControlEventTouchUpInside];
+//    CGSize size2 = [rightButton2 currentBackgroundImage].size;
+//    rightButton2.frame = CGRectMake(0, 0, size2.width, size.height);
+//  //  self.navigationItem.ri = [[UIBarButtonItem alloc]initWithCustomView:rightButton2];
+//    self.navigationItem.rightBarButtonItems = @[rightButton1,rightButton2];
+
+    
+    
+    
+    
     self.view.backgroundColor = [UIColor grayColor];
     UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     [button setTitle:@"进入下一个控制器" forState:UIControlStateNormal];
@@ -71,6 +104,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (void)transitionVC{
     SecondViewController * secondVC = [[SecondViewController alloc]init];
     [self.navigationController pushViewController:secondVC animated:YES];
+}
+
+- (void)addUser{
+    
 }
 
 #pragma mark --NavgationControllerDelegate
