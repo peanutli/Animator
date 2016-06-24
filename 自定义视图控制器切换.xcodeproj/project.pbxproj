@@ -83,6 +83,7 @@
 		6EADB9B61D1A6D790043419D /* LDCKVONotifiyingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B51D1A6D790043419D /* LDCKVONotifiyingPerson.m */; };
 		6EADB9BA1D1A801F0043419D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B91D1A801F0043419D /* Calculator.m */; };
 		6EB41A291D1D13C100C32DA7 /* LDCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */; };
+		6EB41A2D1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -250,6 +251,8 @@
 		6EB41A271D1D13C100C32DA7 /* LDCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDCBaseNavigationController.h; path = ../LDCBaseNavigationController.h; sourceTree = "<group>"; };
 		6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDCBaseNavigationController.m; path = ../LDCBaseNavigationController.m; sourceTree = "<group>"; };
 		6EB41A2A1D1D19AA00C32DA7 /* LDCPch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LDCPch.h; path = ../LDCPch.h; sourceTree = "<group>"; };
+		6EB41A2B1D1D382F00C32DA7 /* UIBarButtonItem+LDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LDC.h"; sourceTree = "<group>"; };
+		6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LDC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +416,8 @@
 				6E8D50611D113E860012CD3B /* UIView+SetRect.m */,
 				6E8D50DE1D13BE3E0012CD3B /* UIFont+Fonts.h */,
 				6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */,
+				6EB41A2B1D1D382F00C32DA7 /* UIBarButtonItem+LDC.h */,
+				6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */,
 			);
 			name = UICategory;
 			sourceTree = "<group>";
@@ -742,6 +747,7 @@
 				6E8D50D41D12CF9D0012CD3B /* CustomCell.m in Sources */,
 				6E8D50D01D12CAF20012CD3B /* POPVector.mm in Sources */,
 				6E8D50DC1D13BBCE0012CD3B /* SpringScaleViewController.m in Sources */,
+				6EB41A2D1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m in Sources */,
 				6E8D513F1D16D4D20012CD3B /* UIImage+WebP.m in Sources */,
 				6E8D50C31D12CAF20012CD3B /* POPAnimationExtras.mm in Sources */,
 				6E8D50CE1D12CAF20012CD3B /* POPPropertyAnimation.mm in Sources */,

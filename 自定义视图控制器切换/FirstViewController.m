@@ -17,6 +17,7 @@
 #import "ScrollViewAnimationController.h"
 #import "InfiniteLoopViewController.h"
 #import "ScrollParallax ViewController.h"
+#import "UIBarButtonItem+LDC.h"
 static NSString *CellIdentifier = @"CellIdentifier";
 static NSInteger kNavButtonTag = 2000;
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
@@ -44,13 +45,14 @@ static NSInteger kNavButtonTag = 2000;
     [super viewDidLoad];
     LDCLog(@"hello world");
     self.navigationController.delegate = self;
-
-    UIBarButtonItem * leftButtonItem = [self setupBarButtonItem:@"user_sel" selecImage:@"user" tag:kNavButtonTag + 1];
-    self.navigationItem.leftBarButtonItem = leftButtonItem;
     
-    UIBarButtonItem * rightButtonItem1 = [self setupBarButtonItem:@"home_sel" selecImage:@"home" tag:kNavButtonTag + 1];
-    UIBarButtonItem * rightButtonItem2 = [self setupBarButtonItem:@"search_sel" selecImage:@"search" tag:kNavButtonTag + 1];
-    self.navigationItem.rightBarButtonItems = @[rightButtonItem1,rightButtonItem2];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"user_sel" selecImage:@"user" target:self selector:@selector(barButtonClicked)];
+    
+    UIBarButtonItem * rightBarButtonImtem1 = [UIBarButtonItem barButtonItemWith:@"home_sel" selecImage:@"home" target:self selector:@selector(barButtonClicked)];
+    
+    UIBarButtonItem * rightBarButtonItem2 = [UIBarButtonItem barButtonItemWith:@"search_sel" selecImage:@"search" target:self selector:@selector(barButtonClicked)];
+    self.navigationItem.rightBarButtonItems = @[rightBarButtonImtem1,rightBarButtonItem2];
+
     
     self.view.backgroundColor = [UIColor grayColor];
     UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
