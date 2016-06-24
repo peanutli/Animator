@@ -18,6 +18,7 @@
 #import "InfiniteLoopViewController.h"
 #import "ScrollParallax ViewController.h"
 static NSString *CellIdentifier = @"CellIdentifier";
+static NSInteger kNavButtonTag = 2000;
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
 @property (nonatomic,strong) NSArray * dataArray;
@@ -43,33 +44,13 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [super viewDidLoad];
     LDCLog(@"hello world");
     self.navigationController.delegate = self;
-    UIButton * leftbutton = [[UIButton alloc]init];
-    [leftbutton setBackgroundImage:[UIImage imageNamed:@"user_sel"] forState:UIControlStateNormal];
-    [leftbutton setBackgroundImage:[UIImage imageNamed:@"user"] forState:UIControlStateHighlighted];
-    [leftbutton addTarget:self action:@selector(addUser) forControlEvents:UIControlEventTouchUpInside];
-    CGSize size = [leftbutton currentBackgroundImage].size;
-    leftbutton.frame = CGRectMake(0, 0, size.width, size.height);
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftbutton];
-    
-//    UIButton * rightButton1 = [[UIButton alloc]init];
-//    [rightButton1 setBackgroundImage:[UIImage imageNamed:@"home_sel"] forState:UIControlStateNormal];
-//    [rightButton1 setBackgroundImage:[UIImage imageNamed:@"home"] forState:UIControlStateHighlighted];
-//   // [rightButton1 addTarget:self action:@selector(addUser) forControlEvents:UIControlEventTouchUpInside];
-//    CGSize size1 = [rightButton1 currentBackgroundImage].size;
-//    rightButton1.frame = CGRectMake(0, 0, size1.width, size1.height);
-//    
-//    UIButton * rightButton2 = [[UIButton alloc]init];
-//    [rightButton2 setBackgroundImage:[UIImage imageNamed:@"search_sel"] forState:UIControlStateNormal];
-//    [rightButton2 setBackgroundImage:[UIImage imageNamed:@"search"] forState:UIControlStateHighlighted];
-//   // [rightButton2 addTarget:self action:@selector(addUser) forControlEvents:UIControlEventTouchUpInside];
-//    CGSize size2 = [rightButton2 currentBackgroundImage].size;
-//    rightButton2.frame = CGRectMake(0, 0, size2.width, size.height);
-//  //  self.navigationItem.ri = [[UIBarButtonItem alloc]initWithCustomView:rightButton2];
-//    self.navigationItem.rightBarButtonItems = @[rightButton1,rightButton2];
 
+    UIBarButtonItem * leftButtonItem = [self setupBarButtonItem:@"user_sel" selecImage:@"user" tag:kNavButtonTag + 1];
+    self.navigationItem.leftBarButtonItem = leftButtonItem;
     
-    
-    
+    UIBarButtonItem * rightButtonItem1 = [self setupBarButtonItem:@"home_sel" selecImage:@"home" tag:kNavButtonTag + 1];
+    UIBarButtonItem * rightButtonItem2 = [self setupBarButtonItem:@"search_sel" selecImage:@"search" tag:kNavButtonTag + 1];
+    self.navigationItem.rightBarButtonItems = @[rightButtonItem1,rightButtonItem2];
     
     self.view.backgroundColor = [UIColor grayColor];
     UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
@@ -108,6 +89,21 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 - (void)addUser{
     
+}
+
+- (void)barButtonClicked{
+    
+}
+
+- (UIBarButtonItem *)setupBarButtonItem:(NSString *)image selecImage:(NSString *)selecImage tag:(NSInteger)tag{
+    UIButton * barButton = [[UIButton alloc]init];
+    [barButton setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [barButton setBackgroundImage:[UIImage imageNamed:selecImage] forState:UIControlStateHighlighted];
+    barButton.tag =tag;
+    [barButton addTarget:self action:@selector(barButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    barButton.size = [barButton currentBackgroundImage].size;
+    UIBarButtonItem * buttonImtem = [[UIBarButtonItem alloc]initWithCustomView:barButton];
+    return buttonImtem;
 }
 
 #pragma mark --NavgationControllerDelegate

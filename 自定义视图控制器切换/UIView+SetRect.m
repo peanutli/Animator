@@ -28,4 +28,11 @@
     return CGPointMake(CGRectGetWidth(self.bounds)/2.f, CGRectGetHeight(self.bounds)/2.f);
 }
 
+- (void)setSize:(CGSize)size{
+    CGRect newFrame = self.frame;
+    newFrame.size.width = size.width;
+    newFrame.size.height = size.height;
+    self.frame = newFrame;
+}
+
 @end
