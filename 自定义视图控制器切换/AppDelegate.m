@@ -8,20 +8,30 @@
 
 #import "AppDelegate.h"
 #import "FirstViewController.h"
+#import "SecondViewController.h"
 #import "LDCBaseNavigationController.h"
+#import "LDCTabBarController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic,strong)LDCTabBarController * tabBarController;
 
 @end
 
 @implementation AppDelegate
 
+- (void)setUpChildViewControllers{
+    FirstViewController * firstVC = [[FirstViewController alloc]init];
+    SecondViewController * secondVC = [[SecondViewController alloc]init];
+    _tabBarController = [[LDCTabBarController alloc]init];
+    [_tabBarController setupTabBarItemWithChildVC:firstVC image:@"home" selectImage:@"home_sel"];
+    [_tabBarController setupTabBarItemWithChildVC:secondVC image:@"shelf" selectImage:@"shelf_sel"];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    FirstViewController * firstVC = [[FirstViewController alloc]init];
-    LDCBaseNavigationController * nav = [[LDCBaseNavigationController alloc]initWithRootViewController:firstVC];
-    self.window.rootViewController = nav;
+    [self setUpChildViewControllers];
+    self.window.rootViewController = _tabBarController;
     return YES;
 }
 

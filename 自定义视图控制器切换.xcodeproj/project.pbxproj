@@ -84,6 +84,8 @@
 		6EADB9BA1D1A801F0043419D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9B91D1A801F0043419D /* Calculator.m */; };
 		6EB41A291D1D13C100C32DA7 /* LDCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */; };
 		6EB41A2D1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */; };
+		6EB41A301D1E498900C32DA7 /* LDCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A2F1D1E498900C32DA7 /* LDCTabBarController.m */; };
+		6EB41A361D1E4E4200C32DA7 /* UIImage+LDC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A351D1E4E4200C32DA7 /* UIImage+LDC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,6 +255,10 @@
 		6EB41A2A1D1D19AA00C32DA7 /* LDCPch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LDCPch.h; path = ../LDCPch.h; sourceTree = "<group>"; };
 		6EB41A2B1D1D382F00C32DA7 /* UIBarButtonItem+LDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LDC.h"; sourceTree = "<group>"; };
 		6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LDC.m"; sourceTree = "<group>"; };
+		6EB41A2E1D1E498900C32DA7 /* LDCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCTabBarController.h; sourceTree = "<group>"; };
+		6EB41A2F1D1E498900C32DA7 /* LDCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCTabBarController.m; sourceTree = "<group>"; };
+		6EB41A341D1E4E4200C32DA7 /* UIImage+LDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LDC.h"; sourceTree = "<group>"; };
+		6EB41A351D1E4E4200C32DA7 /* UIImage+LDC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LDC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +424,8 @@
 				6E8D50DF1D13BE3E0012CD3B /* UIFont+Fonts.m */,
 				6EB41A2B1D1D382F00C32DA7 /* UIBarButtonItem+LDC.h */,
 				6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */,
+				6EB41A341D1E4E4200C32DA7 /* UIImage+LDC.h */,
+				6EB41A351D1E4E4200C32DA7 /* UIImage+LDC.m */,
 			);
 			name = UICategory;
 			sourceTree = "<group>";
@@ -626,6 +634,8 @@
 			children = (
 				6EB41A271D1D13C100C32DA7 /* LDCBaseNavigationController.h */,
 				6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */,
+				6EB41A2E1D1E498900C32DA7 /* LDCTabBarController.h */,
+				6EB41A2F1D1E498900C32DA7 /* LDCTabBarController.m */,
 			);
 			name = BaseNav;
 			sourceTree = "<group>";
@@ -744,6 +754,7 @@
 				6E8D51411D16D4D20012CD3B /* UIImageView+WebCache.m in Sources */,
 				6E8D50C51D12CAF20012CD3B /* POPAnimationTracer.mm in Sources */,
 				6EADB99C1D18E1920043419D /* MoreInfoView.m in Sources */,
+				6EB41A361D1E4E4200C32DA7 /* UIImage+LDC.m in Sources */,
 				6E8D50D41D12CF9D0012CD3B /* CustomCell.m in Sources */,
 				6E8D50D01D12CAF20012CD3B /* POPVector.mm in Sources */,
 				6E8D50DC1D13BBCE0012CD3B /* SpringScaleViewController.m in Sources */,
@@ -766,6 +777,7 @@
 				6EADB9961D18DDAC0043419D /* ScrollParallax ViewController.m in Sources */,
 				6E8D51031D164A680012CD3B /* InfiniteLoopView.m in Sources */,
 				6EADB9B31D1A6B6A0043419D /* NSObject+KVO.m in Sources */,
+				6EB41A301D1E498900C32DA7 /* LDCTabBarController.m in Sources */,
 				6E8D51381D16D4D20012CD3B /* SDWebImageDownloader.m in Sources */,
 				6E8D50CB1D12CAF20012CD3B /* POPGeometry.mm in Sources */,
 				6E8D50C81D12CAF20012CD3B /* POPCGUtils.mm in Sources */,

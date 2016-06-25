@@ -19,7 +19,7 @@
 #import "ScrollParallax ViewController.h"
 #import "UIBarButtonItem+LDC.h"
 static NSString *CellIdentifier = @"CellIdentifier";
-static NSInteger kNavButtonTag = 2000;
+
 @interface FirstViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
 @property (nonatomic,strong) NSArray * dataArray;

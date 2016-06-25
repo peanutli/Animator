@@ -15,4 +15,7 @@
 #define LDCLog(...)
 #endif
 
+#define LDCRGBColor(a,b,c) [UIColor colorWithRed:(a)/255.f green:(b)/255.f blue:(c)/255.f alpha:1.0];
+#define LDCGlobalBackgroundColor LDCRGBColor(233,233,233);
+
 #endif /* LDCPch_h */

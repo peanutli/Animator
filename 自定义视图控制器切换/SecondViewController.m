@@ -22,7 +22,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = LDCGlobalBackgroundColor;
     // Do any additional setup after loading the view.
 }
 
