@@ -20,4 +20,13 @@
     return [[self alloc]initWithCustomView:barButton];
 }
 
++ (instancetype)barButtonItemWith:(NSString *)image selecImage:(NSString *)selecImage target:(id)target selector:(SEL)sel state:(UIControlState)state{
+    UIButton * barButton = [[UIButton alloc]init];
+    [barButton setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [barButton setBackgroundImage:[UIImage imageNamed:selecImage] forState:state];
+    [barButton addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
+    barButton.size = [barButton currentBackgroundImage].size;
+    return [[self alloc]initWithCustomView:barButton];
+}
+
 @end

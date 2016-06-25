@@ -12,6 +12,7 @@
 #import "LDCBaseNavigationController.h"
 #import "LDCTabBarController.h"
 
+
 @interface AppDelegate ()
 
 @property (nonatomic,strong)LDCTabBarController * tabBarController;
@@ -20,17 +21,10 @@
 
 @implementation AppDelegate
 
-- (void)setUpChildViewControllers{
-    FirstViewController * firstVC = [[FirstViewController alloc]init];
-    SecondViewController * secondVC = [[SecondViewController alloc]init];
-    _tabBarController = [[LDCTabBarController alloc]init];
-    [_tabBarController setupTabBarItemWithChildVC:firstVC image:@"home" selectImage:@"home_sel"];
-    [_tabBarController setupTabBarItemWithChildVC:secondVC image:@"shelf" selectImage:@"shelf_sel"];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self setUpChildViewControllers];
+    _tabBarController = [[LDCTabBarController alloc]init];
     self.window.rootViewController = _tabBarController;
     return YES;
 }

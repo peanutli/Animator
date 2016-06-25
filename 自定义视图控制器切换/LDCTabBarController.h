@@ -10,6 +10,6 @@
 
 @interface LDCTabBarController : UITabBarController
 
-- (void)setupTabBarItemWithChildVC:(UIViewController *)vc image:(NSString *)imageName selectImage:(NSString *)selectImageName;
+- (void)setupTabBarItemWithChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)imageName selectImage:(NSString *)selectImageName;
 
 @end

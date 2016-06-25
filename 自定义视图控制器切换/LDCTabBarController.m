@@ -9,6 +9,11 @@
 #import "LDCTabBarController.h"
 #import "LDCBaseNavigationController.h"
 #import "UIImage+LDC.h"
+#import "LDCEssenceViewController.h"
+#import "LDCNewViewController.h"
+#import "LDCAttentionViewController.h"
+#import "LDCMineViewController.h"
+#import "LDCTabBar.h"
 
 @interface LDCTabBarController ()
 
@@ -18,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tabBar.backgroundImage = [UIImage imageNamed:@"user_sel"];
+    [self setUpChildViewControllers];
+    [self setValue:[[LDCTabBar alloc]init] forKeyPath:@"tabBar"];
     // Do any additional setup after loading the view.
 }
 
@@ -27,37 +33,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupTabBarItemWithChildVC:(UIViewController *)vc image:(NSString *)imageName selectImage:(NSString *)selectImageName{
-    
+#pragma mark -- priviate method
+- (void)setUpChildViewControllers{
+    LDCEssenceViewController * essenceVC = [[LDCEssenceViewController alloc]init];
+    LDCNewViewController * newVC = [[LDCNewViewController alloc]init];
+    LDCAttentionViewController * attentionVC = [[LDCAttentionViewController alloc]init];
+    LDCMineViewController * mineVC = [[LDCMineViewController alloc]init];
+    [self setupTabBarItemWithChildVC:essenceVC title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
+    [self setupTabBarItemWithChildVC:newVC title:@"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
+    [self setupTabBarItemWithChildVC:attentionVC title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+    [self setupTabBarItemWithChildVC:mineVC title:@"我的" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
+}
+
+-(void)setupTabBarItemWithChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)imageName selectImage:(NSString *)selectImageName{
     UIViewController * viewController = vc;
     LDCBaseNavigationController * nav = [[LDCBaseNavigationController alloc]initWithRootViewController:viewController];
+    viewController.tabBarItem.title = title;
     viewController.tabBarItem.image = [UIImage imageWithRenderingModeAlwaysOriginal:imageName];
     viewController.tabBarItem.selectedImage = [UIImage imageWithRenderingModeAlwaysOriginal:selectImageName];
     
     [self setupTitleColorWithChildVC:vc color:[UIColor grayColor] state:UIControlStateNormal];
-    [self setupTitleColorWithChildVC:vc color:[UIColor redColor] state:UIControlStateHighlighted];
-    //self.tabBar.backgroundColor = [UIColor orangeColor];
-  
-    
+    [self setupTitleColorWithChildVC:vc color:[UIColor blackColor] state:UIControlStateHighlighted];
     [self addChildViewController:nav];
 }
 
 - (void)setupTitleColorWithChildVC:(UIViewController *)vc color:(UIColor *)color state:(UIControlState)state{
-    
     NSMutableDictionary * dic = [[NSMutableDictionary alloc]init];
     dic[NSForegroundColorAttributeName] = color;
     [vc.tabBarItem setTitleTextAttributes:dic forState:state];
 }
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

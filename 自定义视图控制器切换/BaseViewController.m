@@ -15,7 +15,7 @@
 @implementation BaseViewController
 
 - (void)setStep{
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = LDCGlobalBackgroundColor;
 }
 
 - (void)viewDidLoad {

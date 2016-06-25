@@ -16,8 +16,24 @@
     self.frame = newFrame;
 }
 
+- (void)setWidth:(CGFloat)width{
+    CGRect newFrame = self.frame;
+    newFrame.size.width = width;
+    self.frame = newFrame;
+}
+
 - (CGFloat)width{
     return CGRectGetWidth(self.bounds);
+}
+
+- (void)setHeight:(CGFloat)height{
+    CGRect newFrame = self.frame;
+    newFrame.size.height = height;
+    self.frame = newFrame;
+}
+
+- (CGFloat)height{
+    return CGRectGetHeight(self.bounds);
 }
 
 - (CGFloat)x{

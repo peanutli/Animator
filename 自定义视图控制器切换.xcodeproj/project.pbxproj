@@ -86,6 +86,11 @@
 		6EB41A2D1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A2C1D1D382F00C32DA7 /* UIBarButtonItem+LDC.m */; };
 		6EB41A301D1E498900C32DA7 /* LDCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A2F1D1E498900C32DA7 /* LDCTabBarController.m */; };
 		6EB41A361D1E4E4200C32DA7 /* UIImage+LDC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB41A351D1E4E4200C32DA7 /* UIImage+LDC.m */; };
+		6EDE18E91D1E9F5700DA552F /* LDCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18E81D1E9F5700DA552F /* LDCTabBar.m */; };
+		6EDE18ED1D1EA24300DA552F /* LDCEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18EC1D1EA24300DA552F /* LDCEssenceViewController.m */; };
+		6EDE18F01D1EA28400DA552F /* LDCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18EF1D1EA28400DA552F /* LDCNewViewController.m */; };
+		6EDE18F31D1EA2B900DA552F /* LDCAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18F21D1EA2B900DA552F /* LDCAttentionViewController.m */; };
+		6EDE18F61D1EA2DF00DA552F /* LDCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18F51D1EA2DF00DA552F /* LDCMineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -259,6 +264,16 @@
 		6EB41A2F1D1E498900C32DA7 /* LDCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCTabBarController.m; sourceTree = "<group>"; };
 		6EB41A341D1E4E4200C32DA7 /* UIImage+LDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LDC.h"; sourceTree = "<group>"; };
 		6EB41A351D1E4E4200C32DA7 /* UIImage+LDC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LDC.m"; sourceTree = "<group>"; };
+		6EDE18E71D1E9F5700DA552F /* LDCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCTabBar.h; sourceTree = "<group>"; };
+		6EDE18E81D1E9F5700DA552F /* LDCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCTabBar.m; sourceTree = "<group>"; };
+		6EDE18EB1D1EA24300DA552F /* LDCEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCEssenceViewController.h; sourceTree = "<group>"; };
+		6EDE18EC1D1EA24300DA552F /* LDCEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCEssenceViewController.m; sourceTree = "<group>"; };
+		6EDE18EE1D1EA28400DA552F /* LDCNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCNewViewController.h; sourceTree = "<group>"; };
+		6EDE18EF1D1EA28400DA552F /* LDCNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCNewViewController.m; sourceTree = "<group>"; };
+		6EDE18F11D1EA2B800DA552F /* LDCAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCAttentionViewController.h; sourceTree = "<group>"; };
+		6EDE18F21D1EA2B900DA552F /* LDCAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCAttentionViewController.m; sourceTree = "<group>"; };
+		6EDE18F41D1EA2DF00DA552F /* LDCMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCMineViewController.h; sourceTree = "<group>"; };
+		6EDE18F51D1EA2DF00DA552F /* LDCMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCMineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +306,7 @@
 		6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */ = {
 			isa = PBXGroup;
 			children = (
+				6EDE18EA1D1EA1CF00DA552F /* ViewControllers */,
 				6EB41A251D1D134B00C32DA7 /* Base */,
 				6EADB9991D18E16F0043419D /* View */,
 				6E8D51101D16D47E0012CD3B /* ThirdParty */,
@@ -300,7 +316,7 @@
 				6E8D50ED1D156F420012CD3B /* ScrollViewComputing */,
 				6E8D50E41D1509A70012CD3B /* Picture */,
 				6E8D50DD1D13BCD40012CD3B /* BaseVC */,
-				6E8D50D91D13BB9A0012CD3B /* ViewControllers */,
+				6E8D50D91D13BB9A0012CD3B /* ViewControllerss */,
 				6E8D50D81D13BB780012CD3B /* UICategory */,
 				6E8D508B1D12CAF20012CD3B /* pop */,
 				6E8D507E1D127FEB0012CD3B /* GCD */,
@@ -430,7 +446,7 @@
 			name = UICategory;
 			sourceTree = "<group>";
 		};
-		6E8D50D91D13BB9A0012CD3B /* ViewControllers */ = {
+		6E8D50D91D13BB9A0012CD3B /* ViewControllerss */ = {
 			isa = PBXGroup;
 			children = (
 				6E8D50DA1D13BBCE0012CD3B /* SpringScaleViewController.h */,
@@ -442,7 +458,7 @@
 				6EADB9941D18DDAC0043419D /* ScrollParallax ViewController.h */,
 				6EADB9951D18DDAC0043419D /* ScrollParallax ViewController.m */,
 			);
-			name = ViewControllers;
+			name = ViewControllerss;
 			sourceTree = "<group>";
 		};
 		6E8D50DD1D13BCD40012CD3B /* BaseVC */ = {
@@ -636,8 +652,25 @@
 				6EB41A281D1D13C100C32DA7 /* LDCBaseNavigationController.m */,
 				6EB41A2E1D1E498900C32DA7 /* LDCTabBarController.h */,
 				6EB41A2F1D1E498900C32DA7 /* LDCTabBarController.m */,
+				6EDE18E71D1E9F5700DA552F /* LDCTabBar.h */,
+				6EDE18E81D1E9F5700DA552F /* LDCTabBar.m */,
 			);
 			name = BaseNav;
+			sourceTree = "<group>";
+		};
+		6EDE18EA1D1EA1CF00DA552F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EDE18EB1D1EA24300DA552F /* LDCEssenceViewController.h */,
+				6EDE18EC1D1EA24300DA552F /* LDCEssenceViewController.m */,
+				6EDE18EE1D1EA28400DA552F /* LDCNewViewController.h */,
+				6EDE18EF1D1EA28400DA552F /* LDCNewViewController.m */,
+				6EDE18F11D1EA2B800DA552F /* LDCAttentionViewController.h */,
+				6EDE18F21D1EA2B900DA552F /* LDCAttentionViewController.m */,
+				6EDE18F41D1EA2DF00DA552F /* LDCMineViewController.h */,
+				6EDE18F51D1EA2DF00DA552F /* LDCMineViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -722,17 +755,20 @@
 				6E8D50C11D12CAF20012CD3B /* POPAnimation.mm in Sources */,
 				6E8D50CC1D12CAF20012CD3B /* POPLayerExtras.mm in Sources */,
 				6E8D51001D1646F60012CD3B /* InfiniteLoopViewBuilder.m in Sources */,
+				6EDE18F31D1EA2B900DA552F /* LDCAttentionViewController.m in Sources */,
 				6EADB9A01D1934070043419D /* CalculatorMaker.m in Sources */,
 				6E8D50E31D1500AE0012CD3B /* ScrollViewAnimationController.m in Sources */,
 				6EADB9BA1D1A801F0043419D /* Calculator.m in Sources */,
 				6EADB9A31D193DE90043419D /* NSObject+Calculator.m in Sources */,
 				6E8D510B1D1689780012CD3B /* LoopViewCell.m in Sources */,
 				6E8D513C1D16D4D20012CD3B /* UIButton+WebCache.m in Sources */,
+				6EDE18E91D1E9F5700DA552F /* LDCTabBar.m in Sources */,
 				6E8D510F1D168C030012CD3B /* ImageModel.m in Sources */,
 				6E8D51341D16D4D20012CD3B /* NSData+ImageContentType.m in Sources */,
 				6E8D51371D16D4D20012CD3B /* SDWebImageDecoder.m in Sources */,
 				6E8D50F91D15B8810012CD3B /* InfiniteLoopViewController.m in Sources */,
 				6EADB9B61D1A6D790043419D /* LDCKVONotifiyingPerson.m in Sources */,
+				6EDE18ED1D1EA24300DA552F /* LDCEssenceViewController.m in Sources */,
 				6EADB9A61D1A443F0043419D /* CalculatorManger.m in Sources */,
 				6E8D50F41D1571300012CD3B /* Math.m in Sources */,
 				6E8D50C61D12CAF20012CD3B /* POPAnimator.mm in Sources */,
@@ -768,6 +804,7 @@
 				6E8D50421D1133B20012CD3B /* ViewController.m in Sources */,
 				6E8D50E01D13BE3E0012CD3B /* UIFont+Fonts.m in Sources */,
 				6E8D50811D12803E0012CD3B /* GCDQueue.m in Sources */,
+				6EDE18F01D1EA28400DA552F /* LDCNewViewController.m in Sources */,
 				6E8D503F1D1133B20012CD3B /* AppDelegate.m in Sources */,
 				6E8D503C1D1133B20012CD3B /* main.m in Sources */,
 				6E8D51071D1665010012CD3B /* CustomInfiniteLoopViewCell.m in Sources */,
@@ -785,6 +822,7 @@
 				6E8D50C21D12CAF20012CD3B /* POPAnimationEvent.mm in Sources */,
 				6E8D50621D113E860012CD3B /* UIView+SetRect.m in Sources */,
 				6E8D50591D1138160012CD3B /* TransitionAnimated.m in Sources */,
+				6EDE18F61D1EA2DF00DA552F /* LDCMineViewController.m in Sources */,
 				6E8D51421D16D4D20012CD3B /* UIView+WebCacheOperation.m in Sources */,
 				6E8D50D11D12CAF20012CD3B /* TransformationMatrix.cpp in Sources */,
 			);
