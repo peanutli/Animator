@@ -8,6 +8,8 @@
 
 #import "LDCNewViewController.h"
 #import "UIBarButtonItem+LDC.h"
+#import "LDCNewDetailViewController.h"
+
 
 @interface LDCNewViewController ()
 
@@ -17,7 +19,8 @@
 
 - (void)setStep{
     [super setStep];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"MainTagSubIcon" selecImage:@"MainTagSubIconClick" target:self selector:nil];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"MainTagSubIcon" selecImage:@"MainTagSubIconClick" target:self selector:@selector(pushNewDetailVC)];
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
 }
 
 - (void)viewDidLoad {
@@ -28,6 +31,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma  mark--privateMethod
+- (void)pushNewDetailVC{
+    LDCNewDetailViewController * newDetailVC = [[LDCNewDetailViewController alloc]init];
+    [self.navigationController pushViewController:newDetailVC animated:YES];
 }
 
 /*

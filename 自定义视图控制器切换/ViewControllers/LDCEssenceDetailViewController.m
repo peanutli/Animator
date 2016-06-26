@@ -1,30 +1,26 @@
 //
-//  LDCEssenceViewController.m
+//  LDCEssenceDetailViewController.m
 //  自定义视图控制器切换
 //
-//  Created by 花生 on 16/6/25.
+//  Created by 花生 on 16/6/26.
 //  Copyright © 2016年 花生. All rights reserved.
 //
 
-#import "LDCEssenceViewController.h"
-#import "UIBarButtonItem+LDC.h"
 #import "LDCEssenceDetailViewController.h"
 
-@interface LDCEssenceViewController ()
+@interface LDCEssenceDetailViewController ()
 
 @end
 
-@implementation LDCEssenceViewController
+@implementation LDCEssenceDetailViewController
 
 - (void)setStep{
     [super setStep];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"MainTagSubIcon" selecImage:@"MainTagSubIconClick" target:self selector:@selector(essenceDetailVC)];
-    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.title = @"详情";
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
 }
 
@@ -35,10 +31,8 @@
 
 #pragma mark--privateMethod
 
-- (void)essenceDetailVC{
-    LDCEssenceDetailViewController * detailVC = [[LDCEssenceDetailViewController alloc]init];
-    detailVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:detailVC animated:YES];
+- (void)backVC{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*

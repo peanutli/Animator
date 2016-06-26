@@ -20,6 +20,22 @@
     return [[self alloc]initWithCustomView:barButton];
 }
 
++ (instancetype)barButtonItemWithTitle:(NSString *)title image:(NSString *)image selecImage:(NSString *)selecImage target:(id)target selector:(SEL)sel{
+    UIButton * barButton = [[UIButton alloc]init];
+    [barButton setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [barButton setImage:[UIImage imageNamed:selecImage] forState:UIControlStateHighlighted];
+    [barButton addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
+   // barButton.size = [barButton currentBackgroundImage].size;
+    barButton.size = CGSizeMake(70, 30);
+    [barButton setTitle:title forState:UIControlStateNormal];
+    [barButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [barButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    barButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    barButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+    barButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    return [[self alloc]initWithCustomView:barButton];
+}
+
 + (instancetype)barButtonItemWith:(NSString *)image selecImage:(NSString *)selecImage target:(id)target selector:(SEL)sel state:(UIControlState)state{
     UIButton * barButton = [[UIButton alloc]init];
     [barButton setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];

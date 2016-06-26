@@ -12,5 +12,6 @@
 
 + (instancetype)barButtonItemWith:(NSString *)image selecImage:(NSString *)selecImage target:(id)target selector:(SEL)sel;
 + (instancetype)barButtonItemWith:(NSString *)image selecImage:(NSString *)selecImage target:(id)target selector:(SEL)sel state:(UIControlState)state;
++ (instancetype)barButtonItemWithTitle:(NSString *)title image:(NSString *)image selecImage:(NSString *)selecImage target:(id)target selector:(SEL)sel;
 
 @end

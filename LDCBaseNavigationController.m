@@ -7,6 +7,7 @@
 //
 
 #import "LDCBaseNavigationController.h"
+#import "UIBarButtonItem+LDC.h"
 
 @interface LDCBaseNavigationController ()
 
@@ -23,6 +24,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.childViewControllers.count > 0) {
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:@"返回" image:@"navigationButtonReturn" selecImage:@"navigationButtonReturnClick" target:self selector:@selector(backVC)];
+    }
+    [super pushViewController:viewController animated:YES];
+}
+
+- (void)backVC{
+    [self popViewControllerAnimated:YES];
 }
 
 
