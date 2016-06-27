@@ -1,24 +1,22 @@
 //
-//  LDCAttentionViewController.m
+//  LDCRecommendViewController.m
 //  自定义视图控制器切换
 //
-//  Created by 花生 on 16/6/25.
+//  Created by 花生 on 16/6/27.
 //  Copyright © 2016年 花生. All rights reserved.
 //
 
-#import "LDCAttentionViewController.h"
-#import "UIBarButtonItem+LDC.h"
 #import "LDCRecommendViewController.h"
 
-@interface LDCAttentionViewController ()
+@interface LDCRecommendViewController ()
 
 @end
 
-@implementation LDCAttentionViewController
+@implementation LDCRecommendViewController
 
 - (void)setStep{
     [super setStep];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"friendsRecommentIcon" selecImage:@"friendsRecommentIcon-click" target:self selector:@selector(recommendClicked)];
+    self.navigationItem.title = @"推荐关注";
 }
 
 - (void)viewDidLoad {
@@ -29,12 +27,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma  mark--private Method
-- (void)recommendClicked{
-    LDCRecommendViewController * recommendVC = [[LDCRecommendViewController alloc]init];
-    [self.navigationController pushViewController:recommendVC animated:YES];
 }
 
 /*

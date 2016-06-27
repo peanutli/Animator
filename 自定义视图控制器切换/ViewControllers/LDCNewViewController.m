@@ -20,6 +20,7 @@
 - (void)setStep{
     [super setStep];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"MainTagSubIcon" selecImage:@"MainTagSubIconClick" target:self selector:@selector(pushNewDetailVC)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWith:@"mine-setting-icon" selecImage:@"mine-setting-icon-click" target:self selector:@selector(customSettingMehtod)];
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
 }
 
@@ -37,6 +38,10 @@
 - (void)pushNewDetailVC{
     LDCNewDetailViewController * newDetailVC = [[LDCNewDetailViewController alloc]init];
     [self.navigationController pushViewController:newDetailVC animated:YES];
+}
+
+- (void)customSettingMehtod{
+    NSLog(@"自定义设置");
 }
 
 /*
