@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E3486901D20EC99001B9337 /* LDCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */; };
+		6E3486941D22300B001B9337 /* LDCRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */; };
 		6E8D503C1D1133B20012CD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D503B1D1133B20012CD3B /* main.m */; };
 		6E8D503F1D1133B20012CD3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D503E1D1133B20012CD3B /* AppDelegate.m */; };
 		6E8D50421D1133B20012CD3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50411D1133B20012CD3B /* ViewController.m */; };
@@ -99,6 +100,7 @@
 /* Begin PBXFileReference section */
 		6E34868E1D20EC99001B9337 /* LDCRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendViewController.h; sourceTree = "<group>"; };
 		6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendViewController.m; sourceTree = "<group>"; };
+		6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCRecommendViewController.xib; sourceTree = "<group>"; };
 		6E8D50371D1133B20012CD3B /* 自定义视图控制器切换.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义视图控制器切换.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8D503B1D1133B20012CD3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E8D503D1D1133B20012CD3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				6EDE18F21D1EA2B900DA552F /* LDCAttentionViewController.m */,
 				6E34868E1D20EC99001B9337 /* LDCRecommendViewController.h */,
 				6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */,
+				6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E8D504A1D1133B20012CD3B /* LaunchScreen.storyboard in Resources */,
+				6E3486941D22300B001B9337 /* LDCRecommendViewController.xib in Resources */,
 				6EADB9981D18E01E0043419D /* 3.png in Resources */,
 				6E8D50471D1133B20012CD3B /* Assets.xcassets in Resources */,
 				6E8D50EA1D1509A70012CD3B /* 2.png in Resources */,

@@ -8,7 +8,12 @@
 
 #import "LDCRecommendViewController.h"
 
-@interface LDCRecommendViewController ()
+static NSString * menuCellIdentifier = @"menuCellIdentifier";
+static NSString * recommendCellIdentifier = @"recommendCellIdentifier";
+
+@interface LDCRecommendViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *menuTableView;
+@property (weak, nonatomic) IBOutlet UITableView *recommendTableView;
 
 @end
 
@@ -16,7 +21,11 @@
 
 - (void)setStep{
     [super setStep];
+    self.view.backgroundColor=LDCRGBColor((arc4random()%255), (arc4random()%255), (arc4random()%255))
     self.navigationItem.title = @"推荐关注";
+    [_menuTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:menuCellIdentifier];
+    [_recommendTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:recommendCellIdentifier];
+    _recommendTableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
 }
 
 - (void)viewDidLoad {
@@ -27,6 +36,36 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark--UITableViewDatasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (tableView == _menuTableView) {
+        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:menuCellIdentifier];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+        return cell;
+    }
+    else{
+        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:recommendCellIdentifier];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+        return cell;
+    }
+    
+}
+
+
+
+
+#pragma mark--UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    _recommendTableView.backgroundColor = LDCRGBColor((arc4random()%255), (arc4random()%255), (arc4random()%255));
+    [_recommendTableView reloadData];
 }
 
 /*
