@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69D9A590488511E0E4918B39 /* libPods-自定义视图控制器切换.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 690034286C455221039BF6F5 /* libPods-自定义视图控制器切换.a */; };
 		6E3486901D20EC99001B9337 /* LDCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */; };
 		6E3486941D22300B001B9337 /* LDCRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */; };
+		6E3486971D22E14F001B9337 /* LDCRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3486961D22E14F001B9337 /* LDCRecommendCategory.m */; };
+		6E34869A1D22F352001B9337 /* LDCRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3486991D22F352001B9337 /* LDCRecommendUser.m */; };
+		6E34869F1D238433001B9337 /* LDCRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E34869D1D238433001B9337 /* LDCRecommendUserCell.m */; };
+		6E3486A01D238433001B9337 /* LDCRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E34869E1D238433001B9337 /* LDCRecommendUserCell.xib */; };
 		6E8D503C1D1133B20012CD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D503B1D1133B20012CD3B /* main.m */; };
 		6E8D503F1D1133B20012CD3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D503E1D1133B20012CD3B /* AppDelegate.m */; };
 		6E8D50421D1133B20012CD3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D50411D1133B20012CD3B /* ViewController.m */; };
@@ -98,9 +103,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		690034286C455221039BF6F5 /* libPods-自定义视图控制器切换.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-自定义视图控制器切换.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E34868E1D20EC99001B9337 /* LDCRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendViewController.h; sourceTree = "<group>"; };
 		6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendViewController.m; sourceTree = "<group>"; };
 		6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCRecommendViewController.xib; sourceTree = "<group>"; };
+		6E3486951D22E14F001B9337 /* LDCRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendCategory.h; sourceTree = "<group>"; };
+		6E3486961D22E14F001B9337 /* LDCRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendCategory.m; sourceTree = "<group>"; };
+		6E3486981D22F352001B9337 /* LDCRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendUser.h; sourceTree = "<group>"; };
+		6E3486991D22F352001B9337 /* LDCRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendUser.m; sourceTree = "<group>"; };
+		6E34869C1D238433001B9337 /* LDCRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendUserCell.h; sourceTree = "<group>"; };
+		6E34869D1D238433001B9337 /* LDCRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendUserCell.m; sourceTree = "<group>"; };
+		6E34869E1D238433001B9337 /* LDCRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCRecommendUserCell.xib; sourceTree = "<group>"; };
 		6E8D50371D1133B20012CD3B /* 自定义视图控制器切换.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义视图控制器切换.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8D503B1D1133B20012CD3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E8D503D1D1133B20012CD3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -285,6 +298,8 @@
 		6EDE18FC1D1F9A1500DA552F /* LDCEssenceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCEssenceDetailViewController.m; sourceTree = "<group>"; };
 		6EDE18FF1D1FDC5200DA552F /* LDCNewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCNewDetailViewController.h; sourceTree = "<group>"; };
 		6EDE19001D1FDC5200DA552F /* LDCNewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCNewDetailViewController.m; sourceTree = "<group>"; };
+		7AB44775628F15B12EEE42D6 /* Pods-自定义视图控制器切换.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-自定义视图控制器切换.release.xcconfig"; path = "Pods/Target Support Files/Pods-自定义视图控制器切换/Pods-自定义视图控制器切换.release.xcconfig"; sourceTree = "<group>"; };
+		A1AE21D319CC3BD758F6A913 /* Pods-自定义视图控制器切换.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-自定义视图控制器切换.debug.xcconfig"; path = "Pods/Target Support Files/Pods-自定义视图控制器切换/Pods-自定义视图控制器切换.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D9A590488511E0E4918B39 /* libPods-自定义视图控制器切换.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +339,10 @@
 		6E34868C1D20EC35001B9337 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E3486951D22E14F001B9337 /* LDCRecommendCategory.h */,
+				6E3486961D22E14F001B9337 /* LDCRecommendCategory.m */,
+				6E3486981D22F352001B9337 /* LDCRecommendUser.h */,
+				6E3486991D22F352001B9337 /* LDCRecommendUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -330,8 +350,19 @@
 		6E34868D1D20EC3E001B9337 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6E34869B1D2383FD001B9337 /* cell */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		6E34869B1D2383FD001B9337 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				6E34869C1D238433001B9337 /* LDCRecommendUserCell.h */,
+				6E34869D1D238433001B9337 /* LDCRecommendUserCell.m */,
+				6E34869E1D238433001B9337 /* LDCRecommendUserCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		6E8D502E1D1133B20012CD3B = {
@@ -339,6 +370,8 @@
 			children = (
 				6E8D50391D1133B20012CD3B /* 自定义视图控制器切换 */,
 				6E8D50381D1133B20012CD3B /* Products */,
+				8F3389BC0887D9E7FA158F7F /* Pods */,
+				86F4C19614ECBDE3DD110A8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -763,6 +796,23 @@
 			name = "新帖";
 			sourceTree = "<group>";
 		};
+		86F4C19614ECBDE3DD110A8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690034286C455221039BF6F5 /* libPods-自定义视图控制器切换.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F3389BC0887D9E7FA158F7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1AE21D319CC3BD758F6A913 /* Pods-自定义视图控制器切换.debug.xcconfig */,
+				7AB44775628F15B12EEE42D6 /* Pods-自定义视图控制器切换.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -770,9 +820,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E8D504E1D1133B20012CD3B /* Build configuration list for PBXNativeTarget "自定义视图控制器切换" */;
 			buildPhases = (
+				18117A95135B565185BBF436 /* Check Pods Manifest.lock */,
 				6E8D50331D1133B20012CD3B /* Sources */,
 				6E8D50341D1133B20012CD3B /* Frameworks */,
 				6E8D50351D1133B20012CD3B /* Resources */,
+				7BEEFDE43C603AE1D6590C98 /* Embed Pods Frameworks */,
+				EF0FFA6C7EE5D93D7768014F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -821,6 +874,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3486A01D238433001B9337 /* LDCRecommendUserCell.xib in Resources */,
 				6E8D504A1D1133B20012CD3B /* LaunchScreen.storyboard in Resources */,
 				6E3486941D22300B001B9337 /* LDCRecommendViewController.xib in Resources */,
 				6EADB9981D18E01E0043419D /* 3.png in Resources */,
@@ -833,6 +887,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18117A95135B565185BBF436 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BEEFDE43C603AE1D6590C98 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-自定义视图控制器切换/Pods-自定义视图控制器切换-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0FFA6C7EE5D93D7768014F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-自定义视图控制器切换/Pods-自定义视图控制器切换-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E8D50331D1133B20012CD3B /* Sources */ = {
@@ -900,6 +1002,7 @@
 				6E8D503F1D1133B20012CD3B /* AppDelegate.m in Sources */,
 				6E8D503C1D1133B20012CD3B /* main.m in Sources */,
 				6E8D51071D1665010012CD3B /* CustomInfiniteLoopViewCell.m in Sources */,
+				6E34869F1D238433001B9337 /* LDCRecommendUserCell.m in Sources */,
 				6E8D50D71D1387530012CD3B /* ListItemCell.m in Sources */,
 				6E8D50CF1D12CAF20012CD3B /* POPSpringAnimation.mm in Sources */,
 				6EDE18FD1D1F9A1500DA552F /* LDCEssenceDetailViewController.m in Sources */,
@@ -911,12 +1014,14 @@
 				6EB41A301D1E498900C32DA7 /* LDCTabBarController.m in Sources */,
 				6E8D51381D16D4D20012CD3B /* SDWebImageDownloader.m in Sources */,
 				6E8D50CB1D12CAF20012CD3B /* POPGeometry.mm in Sources */,
+				6E3486971D22E14F001B9337 /* LDCRecommendCategory.m in Sources */,
 				6E8D50C81D12CAF20012CD3B /* POPCGUtils.mm in Sources */,
 				6E8D50531D1133D40012CD3B /* FirstViewController.m in Sources */,
 				6E8D50C21D12CAF20012CD3B /* POPAnimationEvent.mm in Sources */,
 				6E8D50621D113E860012CD3B /* UIView+SetRect.m in Sources */,
 				6E8D50591D1138160012CD3B /* TransitionAnimated.m in Sources */,
 				6EDE18F61D1EA2DF00DA552F /* LDCMineViewController.m in Sources */,
+				6E34869A1D22F352001B9337 /* LDCRecommendUser.m in Sources */,
 				6E8D51421D16D4D20012CD3B /* UIView+WebCacheOperation.m in Sources */,
 				6E8D50D11D12CAF20012CD3B /* TransformationMatrix.cpp in Sources */,
 			);
@@ -1032,6 +1137,7 @@
 		};
 		6E8D504F1D1133B20012CD3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1AE21D319CC3BD758F6A913 /* Pods-自定义视图控制器切换.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "自定义视图控制器切换/Info.plist";
@@ -1043,6 +1149,7 @@
 		};
 		6E8D50501D1133B20012CD3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB44775628F15B12EEE42D6 /* Pods-自定义视图控制器切换.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "自定义视图控制器切换/Info.plist";

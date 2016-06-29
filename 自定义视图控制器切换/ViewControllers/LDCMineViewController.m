@@ -20,6 +20,7 @@
     UIBarButtonItem * moonButtonItem = [UIBarButtonItem barButtonItemWith:@"mine-moon-icon" selecImage:@"mine-moon-icon-click" target:self selector:nil];
     UIBarButtonItem * settingButtonItem = [UIBarButtonItem barButtonItemWith:@"mine-setting-icon" selecImage:@"mine-setting-icon-click" target:self selector:nil];
     self.navigationItem.rightBarButtonItems = @[settingButtonItem,moonButtonItem];
+    
 }
 
 
