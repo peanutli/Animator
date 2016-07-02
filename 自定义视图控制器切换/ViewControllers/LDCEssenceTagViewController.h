@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface LDCEssenceDetailViewController : BaseViewController
+@interface LDCEssenceTagViewController : BaseViewController
 
 @end

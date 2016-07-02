@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LDCRecommendUser.h"
 
 @interface LDCRecommendUserCell : UITableViewCell
+
+@property (nonatomic,strong) LDCRecommendUser * user;
 
 @end

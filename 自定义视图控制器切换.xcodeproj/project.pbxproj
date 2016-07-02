@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		69D9A590488511E0E4918B39 /* libPods-自定义视图控制器切换.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 690034286C455221039BF6F5 /* libPods-自定义视图控制器切换.a */; };
+		6E048FBE1D266F16009B3815 /* LDCUserLogRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E048FBC1D266F16009B3815 /* LDCUserLogRegisterController.m */; };
+		6E048FBF1D266F16009B3815 /* LDCUserLogRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E048FBD1D266F16009B3815 /* LDCUserLogRegisterController.xib */; };
+		6E0A96C61D2503DD00999E39 /* LDCRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A96C51D2503DD00999E39 /* LDCRecommendTag.m */; };
+		6E0A96CA1D2513E300999E39 /* LDCTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A96C91D2513E300999E39 /* LDCTagViewCell.m */; };
 		6E3486901D20EC99001B9337 /* LDCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */; };
 		6E3486941D22300B001B9337 /* LDCRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */; };
 		6E3486971D22E14F001B9337 /* LDCRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3486961D22E14F001B9337 /* LDCRecommendCategory.m */; };
@@ -98,12 +102,19 @@
 		6EDE18F01D1EA28400DA552F /* LDCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18EF1D1EA28400DA552F /* LDCNewViewController.m */; };
 		6EDE18F31D1EA2B900DA552F /* LDCAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18F21D1EA2B900DA552F /* LDCAttentionViewController.m */; };
 		6EDE18F61D1EA2DF00DA552F /* LDCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18F51D1EA2DF00DA552F /* LDCMineViewController.m */; };
-		6EDE18FD1D1F9A1500DA552F /* LDCEssenceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18FC1D1F9A1500DA552F /* LDCEssenceDetailViewController.m */; };
+		6EDE18FD1D1F9A1500DA552F /* LDCEssenceTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE18FC1D1F9A1500DA552F /* LDCEssenceTagViewController.m */; };
 		6EDE19011D1FDC5200DA552F /* LDCNewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE19001D1FDC5200DA552F /* LDCNewDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		690034286C455221039BF6F5 /* libPods-自定义视图控制器切换.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-自定义视图控制器切换.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E048FBB1D266F16009B3815 /* LDCUserLogRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCUserLogRegisterController.h; sourceTree = "<group>"; };
+		6E048FBC1D266F16009B3815 /* LDCUserLogRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCUserLogRegisterController.m; sourceTree = "<group>"; };
+		6E048FBD1D266F16009B3815 /* LDCUserLogRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCUserLogRegisterController.xib; sourceTree = "<group>"; };
+		6E0A96C41D2503DD00999E39 /* LDCRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendTag.h; sourceTree = "<group>"; };
+		6E0A96C51D2503DD00999E39 /* LDCRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendTag.m; sourceTree = "<group>"; };
+		6E0A96C81D2513E300999E39 /* LDCTagViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCTagViewCell.h; sourceTree = "<group>"; };
+		6E0A96C91D2513E300999E39 /* LDCTagViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCTagViewCell.m; sourceTree = "<group>"; };
 		6E34868E1D20EC99001B9337 /* LDCRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCRecommendViewController.h; sourceTree = "<group>"; };
 		6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCRecommendViewController.m; sourceTree = "<group>"; };
 		6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCRecommendViewController.xib; sourceTree = "<group>"; };
@@ -294,8 +305,8 @@
 		6EDE18F21D1EA2B900DA552F /* LDCAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCAttentionViewController.m; sourceTree = "<group>"; };
 		6EDE18F41D1EA2DF00DA552F /* LDCMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCMineViewController.h; sourceTree = "<group>"; };
 		6EDE18F51D1EA2DF00DA552F /* LDCMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCMineViewController.m; sourceTree = "<group>"; };
-		6EDE18FB1D1F9A1500DA552F /* LDCEssenceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCEssenceDetailViewController.h; sourceTree = "<group>"; };
-		6EDE18FC1D1F9A1500DA552F /* LDCEssenceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCEssenceDetailViewController.m; sourceTree = "<group>"; };
+		6EDE18FB1D1F9A1500DA552F /* LDCEssenceTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCEssenceTagViewController.h; sourceTree = "<group>"; };
+		6EDE18FC1D1F9A1500DA552F /* LDCEssenceTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCEssenceTagViewController.m; sourceTree = "<group>"; };
 		6EDE18FF1D1FDC5200DA552F /* LDCNewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCNewDetailViewController.h; sourceTree = "<group>"; };
 		6EDE19001D1FDC5200DA552F /* LDCNewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCNewDetailViewController.m; sourceTree = "<group>"; };
 		7AB44775628F15B12EEE42D6 /* Pods-自定义视图控制器切换.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-自定义视图控制器切换.release.xcconfig"; path = "Pods/Target Support Files/Pods-自定义视图控制器切换/Pods-自定义视图控制器切换.release.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +325,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E0A96C71D25120D00999E39 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A96C81D2513E300999E39 /* LDCTagViewCell.h */,
+				6E0A96C91D2513E300999E39 /* LDCTagViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		6E34868A1D20EC19001B9337 /* 关注 */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +352,9 @@
 				6E34868E1D20EC99001B9337 /* LDCRecommendViewController.h */,
 				6E34868F1D20EC99001B9337 /* LDCRecommendViewController.m */,
 				6E3486931D22300B001B9337 /* LDCRecommendViewController.xib */,
+				6E048FBB1D266F16009B3815 /* LDCUserLogRegisterController.h */,
+				6E048FBC1D266F16009B3815 /* LDCUserLogRegisterController.m */,
+				6E048FBD1D266F16009B3815 /* LDCUserLogRegisterController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -765,8 +788,8 @@
 			children = (
 				6EDE18EB1D1EA24300DA552F /* LDCEssenceViewController.h */,
 				6EDE18EC1D1EA24300DA552F /* LDCEssenceViewController.m */,
-				6EDE18FB1D1F9A1500DA552F /* LDCEssenceDetailViewController.h */,
-				6EDE18FC1D1F9A1500DA552F /* LDCEssenceDetailViewController.m */,
+				6EDE18FB1D1F9A1500DA552F /* LDCEssenceTagViewController.h */,
+				6EDE18FC1D1F9A1500DA552F /* LDCEssenceTagViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -774,6 +797,8 @@
 		6EDE18F91D1F99AC00DA552F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E0A96C41D2503DD00999E39 /* LDCRecommendTag.h */,
+				6E0A96C51D2503DD00999E39 /* LDCRecommendTag.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -781,6 +806,7 @@
 		6EDE18FA1D1F99B300DA552F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6E0A96C71D25120D00999E39 /* cell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -878,6 +904,7 @@
 				6E8D504A1D1133B20012CD3B /* LaunchScreen.storyboard in Resources */,
 				6E3486941D22300B001B9337 /* LDCRecommendViewController.xib in Resources */,
 				6EADB9981D18E01E0043419D /* 3.png in Resources */,
+				6E048FBF1D266F16009B3815 /* LDCUserLogRegisterController.xib in Resources */,
 				6E8D50471D1133B20012CD3B /* Assets.xcassets in Resources */,
 				6E8D50EA1D1509A70012CD3B /* 2.png in Resources */,
 				6E8D50451D1133B20012CD3B /* Main.storyboard in Resources */,
@@ -962,6 +989,7 @@
 				6E8D51371D16D4D20012CD3B /* SDWebImageDecoder.m in Sources */,
 				6E8D50F91D15B8810012CD3B /* InfiniteLoopViewController.m in Sources */,
 				6EADB9B61D1A6D790043419D /* LDCKVONotifiyingPerson.m in Sources */,
+				6E0A96C61D2503DD00999E39 /* LDCRecommendTag.m in Sources */,
 				6EDE18ED1D1EA24300DA552F /* LDCEssenceViewController.m in Sources */,
 				6EADB9A61D1A443F0043419D /* CalculatorManger.m in Sources */,
 				6E8D50F41D1571300012CD3B /* Math.m in Sources */,
@@ -970,6 +998,7 @@
 				6E8D50C01D12CAF20012CD3B /* POPAnimatableProperty.mm in Sources */,
 				6E8D513A1D16D4D20012CD3B /* SDWebImageManager.m in Sources */,
 				6EB41A291D1D13C100C32DA7 /* LDCBaseNavigationController.m in Sources */,
+				6E0A96CA1D2513E300999E39 /* LDCTagViewCell.m in Sources */,
 				6EADB9AF1D1A69090043419D /* Person.m in Sources */,
 				6E8D50F01D156F800012CD3B /* ScrollViewComputingAlphaValue.m in Sources */,
 				6E8D51331D16D4D20012CD3B /* MKAnnotationView+WebCache.m in Sources */,
@@ -1005,7 +1034,7 @@
 				6E34869F1D238433001B9337 /* LDCRecommendUserCell.m in Sources */,
 				6E8D50D71D1387530012CD3B /* ListItemCell.m in Sources */,
 				6E8D50CF1D12CAF20012CD3B /* POPSpringAnimation.mm in Sources */,
-				6EDE18FD1D1F9A1500DA552F /* LDCEssenceDetailViewController.m in Sources */,
+				6EDE18FD1D1F9A1500DA552F /* LDCEssenceTagViewController.m in Sources */,
 				6E8D51391D16D4D20012CD3B /* SDWebImageDownloaderOperation.m in Sources */,
 				6EADB9961D18DDAC0043419D /* ScrollParallax ViewController.m in Sources */,
 				6E8D51031D164A680012CD3B /* InfiniteLoopView.m in Sources */,
@@ -1015,6 +1044,7 @@
 				6E8D51381D16D4D20012CD3B /* SDWebImageDownloader.m in Sources */,
 				6E8D50CB1D12CAF20012CD3B /* POPGeometry.mm in Sources */,
 				6E3486971D22E14F001B9337 /* LDCRecommendCategory.m in Sources */,
+				6E048FBE1D266F16009B3815 /* LDCUserLogRegisterController.m in Sources */,
 				6E8D50C81D12CAF20012CD3B /* POPCGUtils.mm in Sources */,
 				6E8D50531D1133D40012CD3B /* FirstViewController.m in Sources */,
 				6E8D50C21D12CAF20012CD3B /* POPAnimationEvent.mm in Sources */,

@@ -1,27 +1,22 @@
 //
-//  LDCEssenceDetailViewController.m
+//  LDCUserLogRegisterController.m
 //  自定义视图控制器切换
 //
-//  Created by 花生 on 16/6/26.
+//  Created by 花生 on 16/7/1.
 //  Copyright © 2016年 花生. All rights reserved.
 //
 
-#import "LDCEssenceDetailViewController.h"
+#import "LDCUserLogRegisterController.h"
 
-@interface LDCEssenceDetailViewController ()
+@interface LDCUserLogRegisterController ()
 
 @end
 
-@implementation LDCEssenceDetailViewController
-
-- (void)setStep{
-    [super setStep];
-    self.navigationItem.title = @"详情";
-}
+@implementation LDCUserLogRegisterController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,11 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark--privateMethod
-
-- (void)backVC{
-    [self.navigationController popViewControllerAnimated:YES];
+- (IBAction)backBtn:(id)sender {
+   [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)registerBtn:(id)sender {
+    LDCLog(@"registerBtn");
+}
+
+
 
 /*
 #pragma mark - Navigation

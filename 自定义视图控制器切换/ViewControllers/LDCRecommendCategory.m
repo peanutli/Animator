@@ -10,4 +10,11 @@
 
 @implementation LDCRecommendCategory
 
+- (NSArray<LDCRecommendUser *> *)recommendUsers{
+    if (!_recommendUsers) {
+        _recommendUsers = [[NSMutableArray alloc]init];
+    }
+    return _recommendUsers;
+}
+
 @end

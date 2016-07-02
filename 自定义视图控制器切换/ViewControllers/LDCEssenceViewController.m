@@ -8,9 +8,14 @@
 
 #import "LDCEssenceViewController.h"
 #import "UIBarButtonItem+LDC.h"
-#import "LDCEssenceDetailViewController.h"
+#import "LDCEssenceTagViewController.h"
+#import "LDCKVONotifiyingPerson.h"
+#import "NSObject+KVO.h"
+#import "Person.h"
 
 @interface LDCEssenceViewController ()
+
+@property (nonatomic,strong) Person * p;
 
 @end
 
@@ -20,10 +25,28 @@
     [super setStep];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"MainTagSubIcon" selecImage:@"MainTagSubIconClick" target:self selector:@selector(essenceDetailVC)];
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+//    Person * person = [[Person alloc]init];
+//    person.name = @"李大川";
+//    [person ldc_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+//    person.name = @"刘任鹏";
+//    [person removeObserver:self forKeyPath:@"name"];
+    Person * person = [[Person alloc]init];
+    _p = person;
+    person.name = @"李大川";
+    [person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    person.name = @"刘仁鹏";
+    [person removeObserver:self forKeyPath:@"name"];
+    
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    NSLog(@"%@",_p.name);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     // Do any additional setup after loading the view.
 }
@@ -36,8 +59,8 @@
 #pragma mark--privateMethod
 
 - (void)essenceDetailVC{
-    LDCEssenceDetailViewController * detailVC = [[LDCEssenceDetailViewController alloc]init];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    LDCEssenceTagViewController * tagVC = [[LDCEssenceTagViewController alloc]init];
+    [self.navigationController pushViewController:tagVC animated:YES];
 }
 
 /*

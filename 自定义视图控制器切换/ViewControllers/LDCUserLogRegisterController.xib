@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDCUserLogRegisterController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="448"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wx1-EV-Uvh">
+                    <rect key="frame" x="0.0" y="0.0" width="411" height="448"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPs-qy-tGL">
+                    <rect key="frame" x="20" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="P3T-wv-Qqo"/>
+                        <constraint firstAttribute="height" constant="50" id="wrW-cc-Wxj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="lOH-9G-uvq"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrs-67-9UD">
+                    <rect key="frame" x="0.0" y="348" width="411" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.3217948397" blue="0.35538163880000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="leU-2y-BO0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-Gw-WLH">
+                    <rect key="frame" x="341" y="20" width="50" height="50"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="registerBtn:" destination="-1" eventType="touchUpInside" id="ObG-7L-meR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wPs-qy-tGL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4Ls-VO-YRB"/>
+                <constraint firstItem="Lox-Gw-WLH" firstAttribute="top" secondItem="wPs-qy-tGL" secondAttribute="top" id="7as-Vx-otK"/>
+                <constraint firstItem="wx1-EV-Uvh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7e6-o0-ZxV"/>
+                <constraint firstAttribute="bottom" secondItem="wx1-EV-Uvh" secondAttribute="bottom" id="CIq-IP-GP8"/>
+                <constraint firstItem="wPs-qy-tGL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Gd0-j9-e2m"/>
+                <constraint firstAttribute="trailing" secondItem="wx1-EV-Uvh" secondAttribute="trailing" id="HDb-C2-fkE"/>
+                <constraint firstAttribute="trailing" secondItem="wx1-EV-Uvh" secondAttribute="trailing" constant="20" id="KTM-jY-CIi"/>
+                <constraint firstItem="Lox-Gw-WLH" firstAttribute="height" secondItem="wPs-qy-tGL" secondAttribute="height" id="NTw-KN-Fkf"/>
+                <constraint firstAttribute="trailing" secondItem="Lox-Gw-WLH" secondAttribute="trailing" constant="20" id="QwZ-8H-qXH"/>
+                <constraint firstItem="Lox-Gw-WLH" firstAttribute="width" secondItem="wPs-qy-tGL" secondAttribute="width" id="RJD-vU-WnE"/>
+                <constraint firstAttribute="bottom" secondItem="rrs-67-9UD" secondAttribute="bottom" id="h7S-Xd-6w4"/>
+                <constraint firstAttribute="trailing" secondItem="rrs-67-9UD" secondAttribute="trailing" id="kYN-Jf-NDz"/>
+                <constraint firstItem="rrs-67-9UD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pau-T6-Pnr"/>
+                <constraint firstItem="wx1-EV-Uvh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="t4l-ng-m46"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KTM-jY-CIi"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="377.5" y="184"/>
+        </view>
+    </objects>
+</document>

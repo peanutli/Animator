@@ -10,6 +10,11 @@
 
 @implementation LDCRecommendUserCell
 
+-(void)setUser:(LDCRecommendUser *)user{
+    _user = user;
+    self.textLabel.text = user.screen_name;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

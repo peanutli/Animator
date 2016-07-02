@@ -8,12 +8,21 @@
 
 #import "LDCMineViewController.h"
 #import "UIBarButtonItem+LDC.h"
+#import "LDCRecommendTag.h"
+#import "LDCTagViewCell.h"
 
 @interface LDCMineViewController ()
 
 @end
 
 @implementation LDCMineViewController
+
+/**
+ *配置tableview控件
+ */
+- (void)setupTableView{
+    
+}
 
 - (void)setStep{
     [super setStep];

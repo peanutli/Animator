@@ -9,6 +9,7 @@
 #import "LDCAttentionViewController.h"
 #import "UIBarButtonItem+LDC.h"
 #import "LDCRecommendViewController.h"
+#import "LDCUserLogRegisterController.h"
 
 @interface LDCAttentionViewController ()
 
@@ -19,6 +20,7 @@
 - (void)setStep{
     [super setStep];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWith:@"friendsRecommentIcon" selecImage:@"friendsRecommentIcon-click" target:self selector:@selector(recommendClicked)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWith:@"friendsRecommentIcon" selecImage:@"friendsRecommentIcon-click" target:self selector:@selector(userRegister)];
 }
 
 - (void)viewDidLoad {
@@ -37,6 +39,10 @@
     [self.navigationController pushViewController:recommendVC animated:YES];
 }
 
+- (void)userRegister{
+    LDCUserLogRegisterController * logAndRgisterVC = [[LDCUserLogRegisterController alloc]init];
+    [self presentViewController:logAndRgisterVC animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

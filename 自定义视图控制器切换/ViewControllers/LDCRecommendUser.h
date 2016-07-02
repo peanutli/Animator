@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface LDCRecommendUser : NSObject
 
 @property (nonatomic,assign) NSInteger fans_count;
 @property (nonatomic,copy) NSString * header;
 @property (nonatomic,copy) NSString * screen_name;
+
 
 @end
